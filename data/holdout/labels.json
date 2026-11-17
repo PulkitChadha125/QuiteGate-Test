@@ -1,0 +1,5028 @@
+{
+ "seed": 2026,
+ "sample_rate": 16000,
+ "reply_s": 8.14,
+ "reply_text": "Here is the agenda. First, the budget review. Second, the launch timeline. Third, hiring for the Seoul office.",
+ "scenes": [
+  {
+   "id": "holdout_00",
+   "kind": "no_call",
+   "split": "holdout",
+   "duration": 13.858,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -9.1
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -4.6
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -10.7
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -2.2
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.37,
+     "S1",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     4.111,
+     6.461,
+     "S3",
+     "ko",
+     "그만큼 시간이 더 필요할 것 같아요."
+    ],
+    [
+     7.074,
+     8.804,
+     "S2",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     9.566,
+     12.056,
+     "S1",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "turn_pauses": [],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_01",
+   "kind": "call",
+   "split": "holdout",
+   "duration": 92.395,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -10.9
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -1.3
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -5.3
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -1.6
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -6.9
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.91,
+     "S3",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     4.044,
+     6.814,
+     "S5",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     7.632,
+     9.482,
+     "S2",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     10.252,
+     12.282,
+     "S1",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     13.006,
+     16.326,
+     "S5",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     17.19,
+     19.4,
+     "S4",
+     "ko",
+     "헤이 자비스, 마감일 알려 줘."
+    ],
+    [
+     22.554,
+     24.444,
+     "S5",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     29.44,
+     32.19,
+     "S5",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     32.879,
+     34.729,
+     "S3",
+     "en",
+     "Can we push the client demo to Thursday?"
+    ],
+    [
+     35.059,
+     37.459,
+     "S5",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     38.083,
+     40.213,
+     "S2",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     40.933,
+     43.343,
+     "S3",
+     "en",
+     "Hey Jarvis, remind us about the deadline."
+    ],
+    [
+     46.339,
+     47.749,
+     "S4",
+     "ko",
+     "네, 알겠어요."
+    ],
+    [
+     53.383,
+     55.443,
+     "S4",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     56.614,
+     58.504,
+     "S5",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     59.043,
+     61.743,
+     "S4",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     62.716,
+     65.486,
+     "S5",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     64.732,
+     67.542,
+     "S5",
+     "ko",
+     "Hey Jarvis, 회의록 요약해 줘."
+    ],
+    [
+     71.833,
+     74.453,
+     "S2",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     77.582,
+     79.442,
+     "S3",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     80.34,
+     82.46,
+     "S5",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     83.252,
+     85.632,
+     "S4",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     86.72,
+     89.11,
+     "S3",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     88.39,
+     90.82,
+     "S2",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 17.19,
+     "end": 19.4,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 마감일 알려 줘."
+    },
+    {
+     "start": 40.933,
+     "end": 43.343,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, remind us about the deadline."
+    },
+    {
+     "start": 64.732,
+     "end": 67.542,
+     "lang": "ko",
+     "speaker": "S5",
+     "text": "Hey Jarvis, 회의록 요약해 줘."
+    }
+   ],
+   "stops": [],
+   "turn_pauses": [],
+   "talk_during_reply": [
+    [
+     22.554,
+     24.444,
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     46.339,
+     47.749,
+     "네, 알겠어요."
+    ],
+    [
+     71.833,
+     74.453,
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ]
+   ]
+  },
+  {
+   "id": "holdout_02",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 71.042,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -4.2
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -0.8
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -0.7
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -11.7
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -6.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.93,
+     "S1",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     3.744,
+     6.614,
+     "S3",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     7.101,
+     9.211,
+     "S4",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     10.121,
+     12.561,
+     "S1",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     13.037,
+     15.907,
+     "S3",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     15.573,
+     17.523,
+     "S5",
+     "ko",
+     "헤이 자비스, 다음 주"
+    ],
+    [
+     18.026,
+     19.216,
+     "S5",
+     "ko",
+     "일정 좀 알려 줘."
+    ],
+    [
+     22.608,
+     23.368,
+     "S2",
+     "en",
+     "Stop, please."
+    ],
+    [
+     24.868,
+     27.158,
+     "S2",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     27.938,
+     29.928,
+     "S1",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     30.537,
+     32.187,
+     "S4",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     33.221,
+     35.461,
+     "S3",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     36.228,
+     38.868,
+     "S5",
+     "ko",
+     "헤이 자비스, 다음 발표자가 누구야?"
+    ],
+    [
+     41.276,
+     42.036,
+     "S2",
+     "en",
+     "Stop, please."
+    ],
+    [
+     43.536,
+     45.016,
+     "S1",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     45.613,
+     47.853,
+     "S3",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     48.915,
+     51.025,
+     "S4",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     52.037,
+     53.847,
+     "S2",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     53.188,
+     55.488,
+     "S2",
+     "en",
+     "Hey Jarvis, remind us about the deadline."
+    ],
+    [
+     58.04,
+     58.69,
+     "S5",
+     "ko",
+     "그만해요."
+    ],
+    [
+     60.19,
+     62.32,
+     "S4",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     61.606,
+     63.456,
+     "S1",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     64.478,
+     66.778,
+     "S2",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ],
+    [
+     67.607,
+     69.597,
+     "S1",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ]
+   ],
+   "calls": [
+    {
+     "start": 15.573,
+     "end": 19.216,
+     "lang": "ko",
+     "speaker": "S5",
+     "text": "헤이 자비스, 다음 주 ... 일정 좀 알려 줘."
+    },
+    {
+     "start": 36.228,
+     "end": 38.868,
+     "lang": "ko",
+     "speaker": "S5",
+     "text": "헤이 자비스, 다음 발표자가 누구야?"
+    },
+    {
+     "start": 53.188,
+     "end": 55.488,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Hey Jarvis, remind us about the deadline."
+    }
+   ],
+   "stops": [
+    {
+     "start": 22.608,
+     "end": 23.368,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Stop, please."
+    },
+    {
+     "start": 41.276,
+     "end": 42.036,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Stop, please."
+    },
+    {
+     "start": 58.04,
+     "end": 58.69,
+     "lang": "ko",
+     "speaker": "S5",
+     "text": "그만해요."
+    }
+   ],
+   "turn_pauses": [
+    [
+     17.523,
+     18.026
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_03",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 73.597,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -8.3
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -10.9
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -5.3
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -0.1
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -1.7
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.87,
+     "S5",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     2.228,
+     4.358,
+     "S2",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     5.539,
+     6.689,
+     "S1",
+     "en",
+     "Can someone share their screen?"
+    ],
+    [
+     7.44,
+     9.64,
+     "S4",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     9.992,
+     11.572,
+     "S1",
+     "en",
+     "Hey Jarvis, what did we decide"
+    ],
+    [
+     12.204,
+     12.944,
+     "S1",
+     "en",
+     "about the launch?"
+    ],
+    [
+     16.496,
+     17.046,
+     "S1",
+     "en",
+     "Okay, stop."
+    ],
+    [
+     18.546,
+     21.026,
+     "S4",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     21.814,
+     24.254,
+     "S3",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     25.203,
+     27.463,
+     "S1",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ],
+    [
+     27.87,
+     30.3,
+     "S3",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     31.183,
+     33.353,
+     "S1",
+     "en",
+     "Hey Jarvis, can you list the action items?"
+    ],
+    [
+     36.112,
+     36.732,
+     "S4",
+     "ko",
+     "멈춰요."
+    ],
+    [
+     38.232,
+     40.002,
+     "S5",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     40.414,
+     42.274,
+     "S1",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     43.19,
+     44.96,
+     "S5",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     45.393,
+     47.253,
+     "S1",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     46.692,
+     48.752,
+     "S4",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     49.902,
+     51.992,
+     "S1",
+     "en",
+     "Hey Jarvis, remind us about the deadline."
+    ],
+    [
+     54.903,
+     55.853,
+     "S5",
+     "en",
+     "Okay, stop."
+    ],
+    [
+     57.353,
+     59.833,
+     "S4",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     59.347,
+     61.457,
+     "S2",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     62.368,
+     64.798,
+     "S3",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     65.735,
+     68.435,
+     "S4",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     69.24,
+     71.96,
+     "S3",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 9.992,
+     "end": 12.944,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Hey Jarvis, what did we decide ... about the launch?"
+    },
+    {
+     "start": 31.183,
+     "end": 33.353,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Hey Jarvis, can you list the action items?"
+    },
+    {
+     "start": 49.902,
+     "end": 51.992,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Hey Jarvis, remind us about the deadline."
+    }
+   ],
+   "stops": [
+    {
+     "start": 16.496,
+     "end": 17.046,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Okay, stop."
+    },
+    {
+     "start": 36.112,
+     "end": 36.732,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "멈춰요."
+    },
+    {
+     "start": 54.903,
+     "end": 55.853,
+     "lang": "en",
+     "speaker": "S5",
+     "text": "Okay, stop."
+    }
+   ],
+   "turn_pauses": [
+    [
+     11.572,
+     12.204
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_04",
+   "kind": "no_call",
+   "split": "holdout",
+   "duration": 7.588,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -1.3
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -0.6
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -2.2
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -2.0
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -3.6
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.0,
+     "S2",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     2.473,
+     4.323,
+     "S4",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     3.574,
+     5.764,
+     "S1",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "turn_pauses": [],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_05",
+   "kind": "call",
+   "split": "holdout",
+   "duration": 81.029,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -8.3
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -3.2
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -4.1
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -9.7
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -1.2
+    },
+    {
+     "id": "S6",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -8.5
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.15,
+     "S2",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     3.459,
+     5.489,
+     "S6",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     6.109,
+     8.399,
+     "S5",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     8.725,
+     10.845,
+     "S3",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     11.171,
+     13.531,
+     "S1",
+     "ko",
+     "헤이 자비스, 회의록 요약해 줘."
+    ],
+    [
+     15.747,
+     18.867,
+     "S3",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     23.571,
+     25.061,
+     "S4",
+     "en",
+     "Can someone share their screen?"
+    ],
+    [
+     26.114,
+     28.494,
+     "S1",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     29.066,
+     30.366,
+     "S2",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     30.774,
+     32.584,
+     "S6",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     33.5,
+     35.65,
+     "S3",
+     "ko",
+     "Hey Jarvis, 다음 주"
+    ],
+    [
+     36.696,
+     37.986,
+     "S3",
+     "ko",
+     "일정 좀 알려 줘."
+    ],
+    [
+     41.152,
+     41.722,
+     "S1",
+     "ko",
+     "맞아요."
+    ],
+    [
+     48.026,
+     49.756,
+     "S4",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     50.648,
+     52.948,
+     "S5",
+     "en",
+     "Jarvis is also the name of our new vendor."
+    ],
+    [
+     53.424,
+     55.154,
+     "S4",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     56.282,
+     58.582,
+     "S5",
+     "en",
+     "Hey Jarvis, remind us about the deadline."
+    ],
+    [
+     62.571,
+     63.161,
+     "S1",
+     "ko",
+     "좋네요."
+    ],
+    [
+     68.622,
+     71.022,
+     "S3",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     71.56,
+     73.65,
+     "S6",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     74.248,
+     76.798,
+     "S2",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ],
+    [
+     77.339,
+     79.369,
+     "S6",
+     "en",
+     "Our churn went down two percent last month."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 11.171,
+     "end": 13.531,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "헤이 자비스, 회의록 요약해 줘."
+    },
+    {
+     "start": 33.5,
+     "end": 37.986,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "Hey Jarvis, 다음 주 ... 일정 좀 알려 줘."
+    },
+    {
+     "start": 56.282,
+     "end": 58.582,
+     "lang": "en",
+     "speaker": "S5",
+     "text": "Hey Jarvis, remind us about the deadline."
+    }
+   ],
+   "stops": [],
+   "turn_pauses": [
+    [
+     35.65,
+     36.696
+    ]
+   ],
+   "talk_during_reply": [
+    [
+     15.747,
+     18.867,
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     41.152,
+     41.722,
+     "맞아요."
+    ],
+    [
+     62.571,
+     63.161,
+     "좋네요."
+    ]
+   ]
+  },
+  {
+   "id": "holdout_06",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 71.916,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -3.3
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -11.9
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -5.3
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -9.0
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -8.0
+    },
+    {
+     "id": "S6",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -4.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.5,
+     "S1",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     3.018,
+     5.738,
+     "S4",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     6.75,
+     8.64,
+     "S6",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     9.272,
+     11.602,
+     "S5",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     12.594,
+     14.204,
+     "S2",
+     "en",
+     "Hey Jarvis, can you check"
+    ],
+    [
+     15.359,
+     16.579,
+     "S2",
+     "en",
+     "the budget for next month?"
+    ],
+    [
+     20.037,
+     20.667,
+     "S6",
+     "ko",
+     "그만해요."
+    ],
+    [
+     22.167,
+     24.057,
+     "S1",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     24.827,
+     28.147,
+     "S6",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     28.472,
+     31.092,
+     "S4",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     30.659,
+     31.959,
+     "S2",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     32.851,
+     35.441,
+     "S4",
+     "ko",
+     "헤이 자비스, 아까 결정한 거"
+    ],
+    [
+     36.046,
+     36.616,
+     "S4",
+     "ko",
+     "정리해 줘."
+    ],
+    [
+     39.981,
+     40.251,
+     "S3",
+     "en",
+     "Stop."
+    ],
+    [
+     41.751,
+     43.551,
+     "S2",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     42.934,
+     45.134,
+     "S5",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ],
+    [
+     45.895,
+     48.325,
+     "S4",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     48.674,
+     50.404,
+     "S5",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     51.354,
+     53.404,
+     "S5",
+     "en",
+     "Hey Jarvis, who is presenting next?"
+    ],
+    [
+     57.083,
+     57.543,
+     "S5",
+     "en",
+     "Stop."
+    ],
+    [
+     59.043,
+     61.443,
+     "S6",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     62.03,
+     64.29,
+     "S3",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ],
+    [
+     65.48,
+     66.93,
+     "S2",
+     "en",
+     "Can someone share their screen?"
+    ],
+    [
+     67.705,
+     69.735,
+     "S5",
+     "en",
+     "Let's park that topic for the next meeting."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 12.594,
+     "end": 16.579,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Hey Jarvis, can you check ... the budget for next month?"
+    },
+    {
+     "start": 32.851,
+     "end": 36.616,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 아까 결정한 거 ... 정리해 줘."
+    },
+    {
+     "start": 51.354,
+     "end": 53.404,
+     "lang": "en",
+     "speaker": "S5",
+     "text": "Hey Jarvis, who is presenting next?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 20.037,
+     "end": 20.667,
+     "lang": "ko",
+     "speaker": "S6",
+     "text": "그만해요."
+    },
+    {
+     "start": 39.981,
+     "end": 40.251,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Stop."
+    },
+    {
+     "start": 57.083,
+     "end": 57.543,
+     "lang": "en",
+     "speaker": "S5",
+     "text": "Stop."
+    }
+   ],
+   "turn_pauses": [
+    [
+     14.204,
+     15.359
+    ],
+    [
+     35.441,
+     36.046
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_07",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 85.323,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -10.4
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -3.9
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -1.7
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -7.6
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.42,
+     "S2",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     4.354,
+     6.294,
+     "S1",
+     "en",
+     "Jarvis is also the name of our new vendor."
+    ],
+    [
+     7.312,
+     9.132,
+     "S4",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     10.032,
+     12.222,
+     "S1",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ],
+    [
+     13.369,
+     15.989,
+     "S2",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     15.535,
+     17.685,
+     "S2",
+     "ko",
+     "헤이 자비스, 다음 주"
+    ],
+    [
+     18.686,
+     19.726,
+     "S2",
+     "ko",
+     "일정 좀 알려 줘."
+    ],
+    [
+     23.495,
+     24.385,
+     "S4",
+     "en",
+     "Jarvis, stop."
+    ],
+    [
+     25.885,
+     28.145,
+     "S1",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     28.773,
+     31.343,
+     "S4",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     30.916,
+     32.856,
+     "S1",
+     "en",
+     "Jarvis is also the name of our new vendor."
+    ],
+    [
+     33.8,
+     36.24,
+     "S2",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     36.625,
+     38.035,
+     "S4",
+     "en",
+     "Hey Jarvis, can you check"
+    ],
+    [
+     38.566,
+     39.926,
+     "S4",
+     "en",
+     "the budget for next month?"
+    ],
+    [
+     43.321,
+     43.931,
+     "S2",
+     "ko",
+     "멈춰요."
+    ],
+    [
+     45.431,
+     47.371,
+     "S1",
+     "en",
+     "Jarvis is also the name of our new vendor."
+    ],
+    [
+     47.888,
+     50.208,
+     "S4",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     50.843,
+     53.213,
+     "S3",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     54.162,
+     56.012,
+     "S2",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     56.5,
+     58.46,
+     "S3",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     59.602,
+     61.012,
+     "S4",
+     "en",
+     "Hey Jarvis, can you check"
+    ],
+    [
+     62.003,
+     63.363,
+     "S4",
+     "en",
+     "the budget for next month?"
+    ],
+    [
+     66.835,
+     67.315,
+     "S2",
+     "ko",
+     "멈춰."
+    ],
+    [
+     68.815,
+     71.815,
+     "S3",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     72.27,
+     74.56,
+     "S4",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     74.888,
+     77.278,
+     "S1",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     78.288,
+     80.658,
+     "S3",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     80.967,
+     83.267,
+     "S4",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 15.535,
+     "end": 19.726,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "헤이 자비스, 다음 주 ... 일정 좀 알려 줘."
+    },
+    {
+     "start": 36.625,
+     "end": 39.926,
+     "lang": "en",
+     "speaker": "S4",
+     "text": "Hey Jarvis, can you check ... the budget for next month?"
+    },
+    {
+     "start": 59.602,
+     "end": 63.363,
+     "lang": "en",
+     "speaker": "S4",
+     "text": "Hey Jarvis, can you check ... the budget for next month?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 23.495,
+     "end": 24.385,
+     "lang": "en",
+     "speaker": "S4",
+     "text": "Jarvis, stop."
+    },
+    {
+     "start": 43.321,
+     "end": 43.931,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "멈춰요."
+    },
+    {
+     "start": 66.835,
+     "end": 67.315,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "멈춰."
+    }
+   ],
+   "turn_pauses": [
+    [
+     17.685,
+     18.686
+    ],
+    [
+     38.035,
+     38.566
+    ],
+    [
+     61.012,
+     62.003
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_08",
+   "kind": "no_call",
+   "split": "holdout",
+   "duration": 12.318,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -0.8
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -4.0
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -8.1
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -8.9
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -3.8
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.42,
+     "S4",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     4.459,
+     6.649,
+     "S1",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ],
+    [
+     6.982,
+     8.292,
+     "S2",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     7.775,
+     10.155,
+     "S5",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "turn_pauses": [],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_09",
+   "kind": "call",
+   "split": "holdout",
+   "duration": 84.404,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -11.8
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -11.4
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -0.4
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -3.0
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -5.8
+    },
+    {
+     "id": "S6",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -3.2
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.99,
+     "S4",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     4.097,
+     6.427,
+     "S2",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     7.502,
+     9.902,
+     "S4",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     10.426,
+     12.196,
+     "S2",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     12.599,
+     15.409,
+     "S4",
+     "ko",
+     "Hey Jarvis, 회의록 요약해 줘."
+    ],
+    [
+     18.045,
+     20.105,
+     "S3",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     25.449,
+     27.269,
+     "S6",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     27.957,
+     30.387,
+     "S5",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     30.022,
+     32.532,
+     "S2",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ],
+    [
+     33.338,
+     36.138,
+     "S3",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     36.592,
+     39.672,
+     "S5",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     40.696,
+     42.646,
+     "S3",
+     "ko",
+     "헤이 자비스, 다음 주"
+    ],
+    [
+     43.256,
+     44.446,
+     "S3",
+     "ko",
+     "일정 좀 알려 줘."
+    ],
+    [
+     54.486,
+     56.576,
+     "S6",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     56.952,
+     59.072,
+     "S2",
+     "en",
+     "Can we push the client demo to Thursday?"
+    ],
+    [
+     59.569,
+     60.929,
+     "S6",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     60.404,
+     62.864,
+     "S5",
+     "ko",
+     "헤이 자비스, 마감일 알려 줘."
+    ],
+    [
+     64.882,
+     66.842,
+     "S3",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     72.904,
+     75.164,
+     "S1",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ],
+    [
+     75.715,
+     78.155,
+     "S2",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     78.494,
+     80.684,
+     "S4",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     80.248,
+     82.578,
+     "S2",
+     "en",
+     "I think we need one more designer on the team."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 12.599,
+     "end": 15.409,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "Hey Jarvis, 회의록 요약해 줘."
+    },
+    {
+     "start": 40.696,
+     "end": 44.446,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "헤이 자비스, 다음 주 ... 일정 좀 알려 줘."
+    },
+    {
+     "start": 60.404,
+     "end": 62.864,
+     "lang": "ko",
+     "speaker": "S5",
+     "text": "헤이 자비스, 마감일 알려 줘."
+    }
+   ],
+   "stops": [],
+   "turn_pauses": [
+    [
+     42.646,
+     43.256
+    ]
+   ],
+   "talk_during_reply": [
+    [
+     18.045,
+     20.105,
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     64.882,
+     66.842,
+     "디자이너가 한 명 더 필요해 보여요."
+    ]
+   ]
+  },
+  {
+   "id": "holdout_10",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 69.488,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -11.6
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -7.0
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -5.3
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -6.7
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.6,
+     "S2",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     4.581,
+     7.021,
+     "S3",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     7.911,
+     10.111,
+     "S2",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     9.348,
+     11.528,
+     "S1",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     12.604,
+     14.564,
+     "S2",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     15.648,
+     17.798,
+     "S4",
+     "ko",
+     "헤이 자비스, 다음 주"
+    ],
+    [
+     18.309,
+     19.349,
+     "S4",
+     "ko",
+     "일정 좀 알려 줘."
+    ],
+    [
+     22.693,
+     23.793,
+     "S1",
+     "en",
+     "Jarvis, stop."
+    ],
+    [
+     25.293,
+     27.623,
+     "S3",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     28.771,
+     30.951,
+     "S1",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     31.27,
+     33.34,
+     "S3",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     34.43,
+     36.04,
+     "S1",
+     "en",
+     "Hey Jarvis, can you check"
+    ],
+    [
+     37.218,
+     38.438,
+     "S1",
+     "en",
+     "the budget for next month?"
+    ],
+    [
+     41.723,
+     42.343,
+     "S2",
+     "ko",
+     "멈춰요."
+    ],
+    [
+     43.843,
+     45.903,
+     "S2",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     46.749,
+     48.879,
+     "S4",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     49.281,
+     51.581,
+     "S1",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     50.937,
+     53.527,
+     "S4",
+     "ko",
+     "헤이 자비스, 아까 결정한 거"
+    ],
+    [
+     54.685,
+     55.255,
+     "S4",
+     "ko",
+     "정리해 줘."
+    ],
+    [
+     58.536,
+     59.156,
+     "S2",
+     "ko",
+     "멈춰요."
+    ],
+    [
+     60.656,
+     62.686,
+     "S1",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     63.386,
+     65.736,
+     "S2",
+     "ko",
+     "그만큼 시간이 더 필요할 것 같아요."
+    ],
+    [
+     66.431,
+     67.921,
+     "S3",
+     "en",
+     "Can someone share their screen?"
+    ]
+   ],
+   "calls": [
+    {
+     "start": 15.648,
+     "end": 19.349,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 다음 주 ... 일정 좀 알려 줘."
+    },
+    {
+     "start": 34.43,
+     "end": 38.438,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Hey Jarvis, can you check ... the budget for next month?"
+    },
+    {
+     "start": 50.937,
+     "end": 55.255,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 아까 결정한 거 ... 정리해 줘."
+    }
+   ],
+   "stops": [
+    {
+     "start": 22.693,
+     "end": 23.793,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Jarvis, stop."
+    },
+    {
+     "start": 41.723,
+     "end": 42.343,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "멈춰요."
+    },
+    {
+     "start": 58.536,
+     "end": 59.156,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "멈춰요."
+    }
+   ],
+   "turn_pauses": [
+    [
+     17.798,
+     18.309
+    ],
+    [
+     36.04,
+     37.218
+    ],
+    [
+     53.527,
+     54.685
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_11",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 74.048,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -0.1
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -8.5
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -0.3
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -0.1
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -9.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.02,
+     "S1",
+     "en",
+     "Jarvis is also the name of our new vendor."
+    ],
+    [
+     3.861,
+     6.731,
+     "S5",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     7.304,
+     9.114,
+     "S4",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     10.193,
+     13.063,
+     "S5",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     13.635,
+     16.065,
+     "S2",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     16.968,
+     19.178,
+     "S3",
+     "ko",
+     "헤이 자비스, 마감일 알려 줘."
+    ],
+    [
+     22.777,
+     23.337,
+     "S3",
+     "ko",
+     "그만."
+    ],
+    [
+     24.837,
+     25.987,
+     "S4",
+     "en",
+     "Can someone share their screen?"
+    ],
+    [
+     26.66,
+     29.04,
+     "S3",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     29.795,
+     31.655,
+     "S4",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     32.154,
+     34.904,
+     "S5",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     35.765,
+     38.465,
+     "S3",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     39.268,
+     42.078,
+     "S5",
+     "ko",
+     "Hey Jarvis, 회의록 요약해 줘."
+    ],
+    [
+     45.214,
+     45.784,
+     "S2",
+     "ko",
+     "그만해요."
+    ],
+    [
+     47.284,
+     48.434,
+     "S4",
+     "en",
+     "Can someone share their screen?"
+    ],
+    [
+     48.875,
+     51.495,
+     "S2",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     51.871,
+     54.011,
+     "S1",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     53.273,
+     55.623,
+     "S4",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     56.011,
+     58.371,
+     "S3",
+     "ko",
+     "헤이 자비스, 회의록 요약해 줘."
+    ],
+    [
+     61.463,
+     62.283,
+     "S4",
+     "en",
+     "Stop, please."
+    ],
+    [
+     63.783,
+     67.103,
+     "S5",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     66.716,
+     69.336,
+     "S2",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     70.41,
+     72.67,
+     "S4",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 16.968,
+     "end": 19.178,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "헤이 자비스, 마감일 알려 줘."
+    },
+    {
+     "start": 39.268,
+     "end": 42.078,
+     "lang": "ko",
+     "speaker": "S5",
+     "text": "Hey Jarvis, 회의록 요약해 줘."
+    },
+    {
+     "start": 56.011,
+     "end": 58.371,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "헤이 자비스, 회의록 요약해 줘."
+    }
+   ],
+   "stops": [
+    {
+     "start": 22.777,
+     "end": 23.337,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "그만."
+    },
+    {
+     "start": 45.214,
+     "end": 45.784,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "그만해요."
+    },
+    {
+     "start": 61.463,
+     "end": 62.283,
+     "lang": "en",
+     "speaker": "S4",
+     "text": "Stop, please."
+    }
+   ],
+   "turn_pauses": [],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_12",
+   "kind": "no_call",
+   "split": "holdout",
+   "duration": 9.688,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -3.8
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -6.9
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -0.1
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -6.7
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.61,
+     "S4",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     2.999,
+     5.429,
+     "S1",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     6.305,
+     8.165,
+     "S3",
+     "en",
+     "I think we need one more designer on the team."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "turn_pauses": [],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_13",
+   "kind": "call",
+   "split": "holdout",
+   "duration": 90.169,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -3.7
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -7.6
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -3.0
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -7.1
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.29,
+     "S3",
+     "en",
+     "Can someone share their screen?"
+    ],
+    [
+     3.143,
+     5.033,
+     "S4",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     6.076,
+     8.146,
+     "S3",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     8.674,
+     11.474,
+     "S4",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     12.188,
+     13.538,
+     "S2",
+     "en",
+     "Can someone share their screen?"
+    ],
+    [
+     14.072,
+     16.002,
+     "S3",
+     "en",
+     "Hey Jarvis, what did we decide"
+    ],
+    [
+     17.164,
+     18.024,
+     "S3",
+     "en",
+     "about the launch?"
+    ],
+    [
+     21.426,
+     22.496,
+     "S2",
+     "en",
+     "Okay, got it."
+    ],
+    [
+     28.064,
+     30.164,
+     "S2",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     31.293,
+     33.493,
+     "S4",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     32.896,
+     35.006,
+     "S2",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     35.645,
+     38.285,
+     "S4",
+     "ko",
+     "헤이 자비스, 다음 발표자가 누구야?"
+    ],
+    [
+     40.221,
+     42.211,
+     "S1",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     48.325,
+     50.185,
+     "S2",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     51.198,
+     53.268,
+     "S3",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     52.701,
+     54.591,
+     "S4",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     53.938,
+     56.448,
+     "S3",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ],
+    [
+     57.441,
+     59.631,
+     "S2",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ],
+    [
+     60.754,
+     62.234,
+     "S3",
+     "en",
+     "Hey Jarvis, can you check"
+    ],
+    [
+     62.68,
+     63.95,
+     "S3",
+     "en",
+     "the budget for next month?"
+    ],
+    [
+     67.199,
+     69.579,
+     "S4",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     73.99,
+     76.61,
+     "S1",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     77.374,
+     79.434,
+     "S4",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     78.689,
+     80.789,
+     "S2",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     81.987,
+     85.067,
+     "S1",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     86.266,
+     88.746,
+     "S4",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ]
+   ],
+   "calls": [
+    {
+     "start": 14.072,
+     "end": 18.024,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, what did we decide ... about the launch?"
+    },
+    {
+     "start": 35.645,
+     "end": 38.285,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 다음 발표자가 누구야?"
+    },
+    {
+     "start": 60.754,
+     "end": 63.95,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, can you check ... the budget for next month?"
+    }
+   ],
+   "stops": [],
+   "turn_pauses": [
+    [
+     16.002,
+     17.164
+    ],
+    [
+     62.234,
+     62.68
+    ]
+   ],
+   "talk_during_reply": [
+    [
+     21.426,
+     22.496,
+     "Okay, got it."
+    ],
+    [
+     40.221,
+     42.211,
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     67.199,
+     69.579,
+     "계약 갱신은 이번 달 말까지입니다."
+    ]
+   ]
+  },
+  {
+   "id": "holdout_14",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 69.109,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -4.7
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -3.4
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -11.2
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -0.4
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -7.0
+    },
+    {
+     "id": "S6",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -6.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     4.12,
+     "S3",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     5.137,
+     7.237,
+     "S5",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     7.952,
+     10.042,
+     "S6",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     10.486,
+     13.806,
+     "S3",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     13.102,
+     15.232,
+     "S5",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     14.916,
+     17.316,
+     "S2",
+     "en",
+     "Hey Jarvis, remind us about the deadline."
+    ],
+    [
+     20.226,
+     20.876,
+     "S1",
+     "ko",
+     "그만해요."
+    ],
+    [
+     22.376,
+     25.176,
+     "S1",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     25.576,
+     27.896,
+     "S6",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     27.328,
+     29.448,
+     "S3",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     29.902,
+     32.252,
+     "S2",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     32.66,
+     33.74,
+     "S4",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     34.367,
+     37.007,
+     "S1",
+     "ko",
+     "헤이 자비스, 다음 발표자가 누구야?"
+    ],
+    [
+     40.896,
+     42.376,
+     "S1",
+     "ko",
+     "잠깐, 그만."
+    ],
+    [
+     43.876,
+     46.166,
+     "S6",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     45.538,
+     46.838,
+     "S2",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     47.71,
+     49.77,
+     "S1",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     50.311,
+     52.261,
+     "S1",
+     "ko",
+     "헤이 자비스, 다음 주"
+    ],
+    [
+     52.868,
+     54.058,
+     "S1",
+     "ko",
+     "일정 좀 알려 줘."
+    ],
+    [
+     57.176,
+     57.546,
+     "S6",
+     "en",
+     "Stop."
+    ],
+    [
+     59.046,
+     60.826,
+     "S4",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     61.946,
+     64.296,
+     "S1",
+     "ko",
+     "그만큼 시간이 더 필요할 것 같아요."
+    ],
+    [
+     65.276,
+     67.626,
+     "S2",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 14.916,
+     "end": 17.316,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Hey Jarvis, remind us about the deadline."
+    },
+    {
+     "start": 34.367,
+     "end": 37.007,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "헤이 자비스, 다음 발표자가 누구야?"
+    },
+    {
+     "start": 50.311,
+     "end": 54.058,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "헤이 자비스, 다음 주 ... 일정 좀 알려 줘."
+    }
+   ],
+   "stops": [
+    {
+     "start": 20.226,
+     "end": 20.876,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "그만해요."
+    },
+    {
+     "start": 40.896,
+     "end": 42.376,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "잠깐, 그만."
+    },
+    {
+     "start": 57.176,
+     "end": 57.546,
+     "lang": "en",
+     "speaker": "S6",
+     "text": "Stop."
+    }
+   ],
+   "turn_pauses": [
+    [
+     52.261,
+     52.868
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_15",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 72.597,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -3.8
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -5.5
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -4.6
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -11.5
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -1.9
+    },
+    {
+     "id": "S6",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -5.1
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.15,
+     "S4",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     2.521,
+     4.921,
+     "S3",
+     "ko",
+     "그만큼 시간이 더 필요할 것 같아요."
+    ],
+    [
+     5.72,
+     7.79,
+     "S6",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     8.574,
+     11.014,
+     "S1",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     11.704,
+     14.134,
+     "S2",
+     "en",
+     "Hey Jarvis, can you list the action items?"
+    ],
+    [
+     16.715,
+     17.425,
+     "S3",
+     "ko",
+     "멈춰요."
+    ],
+    [
+     18.925,
+     20.825,
+     "S4",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ],
+    [
+     21.231,
+     23.551,
+     "S5",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     24.101,
+     26.451,
+     "S2",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     26.759,
+     29.379,
+     "S1",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     30.106,
+     31.996,
+     "S3",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     32.415,
+     34.565,
+     "S3",
+     "ko",
+     "Hey Jarvis, 다음 주"
+    ],
+    [
+     35.194,
+     36.484,
+     "S3",
+     "ko",
+     "일정 좀 알려 줘."
+    ],
+    [
+     39.018,
+     40.038,
+     "S6",
+     "en",
+     "Stop, please."
+    ],
+    [
+     41.538,
+     43.008,
+     "S5",
+     "en",
+     "Can someone share their screen?"
+    ],
+    [
+     43.502,
+     45.532,
+     "S6",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     46.523,
+     48.333,
+     "S4",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     49.514,
+     51.314,
+     "S2",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     52.28,
+     54.68,
+     "S2",
+     "en",
+     "Hey Jarvis, remind us about the deadline."
+    ],
+    [
+     57.344,
+     57.954,
+     "S1",
+     "ko",
+     "멈춰요."
+    ],
+    [
+     59.454,
+     62.044,
+     "S3",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     62.709,
+     65.009,
+     "S5",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ],
+    [
+     64.636,
+     66.526,
+     "S3",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     66.868,
+     68.688,
+     "S5",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     69.049,
+     70.909,
+     "S4",
+     "en",
+     "I think we need one more designer on the team."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 11.704,
+     "end": 14.134,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Hey Jarvis, can you list the action items?"
+    },
+    {
+     "start": 32.415,
+     "end": 36.484,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "Hey Jarvis, 다음 주 ... 일정 좀 알려 줘."
+    },
+    {
+     "start": 52.28,
+     "end": 54.68,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Hey Jarvis, remind us about the deadline."
+    }
+   ],
+   "stops": [
+    {
+     "start": 16.715,
+     "end": 17.425,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "멈춰요."
+    },
+    {
+     "start": 39.018,
+     "end": 40.038,
+     "lang": "en",
+     "speaker": "S6",
+     "text": "Stop, please."
+    },
+    {
+     "start": 57.344,
+     "end": 57.954,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "멈춰요."
+    }
+   ],
+   "turn_pauses": [
+    [
+     34.565,
+     35.194
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_16",
+   "kind": "no_call",
+   "split": "holdout",
+   "duration": 11.282,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -2.3
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -1.0
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -0.6
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -8.8
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -3.9
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.18,
+     "S3",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     4.317,
+     6.647,
+     "S5",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     7.623,
+     9.743,
+     "S1",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "turn_pauses": [],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_17",
+   "kind": "call",
+   "split": "holdout",
+   "duration": 80.323,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -11.2
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -1.4
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -0.2
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -11.5
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -8.2
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.91,
+     "S1",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     4.059,
+     6.759,
+     "S5",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     7.736,
+     10.856,
+     "S2",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     11.191,
+     13.341,
+     "S2",
+     "ko",
+     "Hey Jarvis, 다음 주"
+    ],
+    [
+     14.1,
+     15.39,
+     "S2",
+     "ko",
+     "일정 좀 알려 줘."
+    ],
+    [
+     19.424,
+     21.494,
+     "S4",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     25.43,
+     27.54,
+     "S1",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     28.16,
+     30.93,
+     "S2",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     30.253,
+     32.693,
+     "S3",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     33.758,
+     35.908,
+     "S2",
+     "ko",
+     "Hey Jarvis, 다음 주"
+    ],
+    [
+     36.555,
+     37.845,
+     "S2",
+     "ko",
+     "일정 좀 알려 줘."
+    ],
+    [
+     39.992,
+     41.222,
+     "S1",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     47.885,
+     49.915,
+     "S4",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     50.435,
+     52.375,
+     "S1",
+     "en",
+     "Jarvis is also the name of our new vendor."
+    ],
+    [
+     51.785,
+     55.105,
+     "S2",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     56.109,
+     58.159,
+     "S4",
+     "en",
+     "Hey Jarvis, who is presenting next?"
+    ],
+    [
+     60.483,
+     62.593,
+     "S1",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     68.199,
+     70.309,
+     "S1",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     70.786,
+     73.186,
+     "S2",
+     "ko",
+     "디자이너가 한 명 더 필요해 보여요."
+    ],
+    [
+     74.102,
+     76.472,
+     "S1",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ],
+    [
+     77.103,
+     79.693,
+     "S2",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 11.191,
+     "end": 15.39,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "Hey Jarvis, 다음 주 ... 일정 좀 알려 줘."
+    },
+    {
+     "start": 33.758,
+     "end": 37.845,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "Hey Jarvis, 다음 주 ... 일정 좀 알려 줘."
+    },
+    {
+     "start": 56.109,
+     "end": 58.159,
+     "lang": "en",
+     "speaker": "S4",
+     "text": "Hey Jarvis, who is presenting next?"
+    }
+   ],
+   "stops": [],
+   "turn_pauses": [
+    [
+     13.341,
+     14.1
+    ],
+    [
+     35.908,
+     36.555
+    ]
+   ],
+   "talk_during_reply": [
+    [
+     19.424,
+     21.494,
+     "Our churn went down two percent last month."
+    ],
+    [
+     39.992,
+     41.222,
+     "Who is taking notes today?"
+    ],
+    [
+     60.483,
+     62.593,
+     "Let's park that topic for the next meeting."
+    ]
+   ]
+  },
+  {
+   "id": "holdout_18",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 74.128,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -7.3
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -0.4
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -2.2
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -10.8
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -6.0
+    },
+    {
+     "id": "S6",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -2.6
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.42,
+     "S4",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     4.372,
+     5.452,
+     "S2",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     6.557,
+     8.827,
+     "S3",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     9.86,
+     11.98,
+     "S5",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     12.745,
+     15.095,
+     "S2",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     16.168,
+     17.548,
+     "S2",
+     "en",
+     "Hey Jarvis, can you check"
+    ],
+    [
+     18.511,
+     19.491,
+     "S2",
+     "en",
+     "the budget for next month?"
+    ],
+    [
+     23.012,
+     23.372,
+     "S4",
+     "ko",
+     "그만."
+    ],
+    [
+     24.872,
+     27.172,
+     "S3",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     27.673,
+     30.443,
+     "S5",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     31.449,
+     33.429,
+     "S6",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     33.769,
+     36.229,
+     "S4",
+     "ko",
+     "헤이 자비스, 마감일 알려 줘."
+    ],
+    [
+     39.077,
+     39.537,
+     "S6",
+     "en",
+     "Stop."
+    ],
+    [
+     41.037,
+     43.337,
+     "S3",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     42.564,
+     44.664,
+     "S1",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     45.527,
+     47.957,
+     "S4",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     48.789,
+     51.909,
+     "S5",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     53.098,
+     55.938,
+     "S4",
+     "ko",
+     "헤이 자비스, 다음 발표자가 누구야?"
+    ],
+    [
+     59.37,
+     59.64,
+     "S2",
+     "en",
+     "Stop."
+    ],
+    [
+     61.14,
+     63.65,
+     "S6",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ],
+    [
+     64.108,
+     65.918,
+     "S2",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     66.579,
+     68.699,
+     "S5",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     67.963,
+     69.733,
+     "S6",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     70.654,
+     72.644,
+     "S4",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ]
+   ],
+   "calls": [
+    {
+     "start": 16.168,
+     "end": 19.491,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Hey Jarvis, can you check ... the budget for next month?"
+    },
+    {
+     "start": 33.769,
+     "end": 36.229,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 마감일 알려 줘."
+    },
+    {
+     "start": 53.098,
+     "end": 55.938,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 다음 발표자가 누구야?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 23.012,
+     "end": 23.372,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "그만."
+    },
+    {
+     "start": 39.077,
+     "end": 39.537,
+     "lang": "en",
+     "speaker": "S6",
+     "text": "Stop."
+    },
+    {
+     "start": 59.37,
+     "end": 59.64,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Stop."
+    }
+   ],
+   "turn_pauses": [
+    [
+     17.548,
+     18.511
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_19",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 68.718,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -9.6
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -0.7
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -7.7
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -11.4
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.65,
+     "S4",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     3.596,
+     5.486,
+     "S2",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     4.748,
+     7.098,
+     "S3",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     7.727,
+     9.967,
+     "S2",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     10.299,
+     12.919,
+     "S4",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     13.233,
+     15.823,
+     "S4",
+     "ko",
+     "헤이 자비스, 아까 결정한 거"
+    ],
+    [
+     16.284,
+     16.854,
+     "S4",
+     "ko",
+     "정리해 줘."
+    ],
+    [
+     19.52,
+     20.15,
+     "S2",
+     "ko",
+     "그만해요."
+    ],
+    [
+     21.65,
+     23.68,
+     "S1",
+     "en",
+     "I'll send the summary to everyone tonight."
+    ],
+    [
+     24.738,
+     26.928,
+     "S2",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     27.334,
+     29.684,
+     "S3",
+     "en",
+     "Jarvis is also the name of our new vendor."
+    ],
+    [
+     30.525,
+     33.335,
+     "S2",
+     "ko",
+     "Hey Jarvis, 회의록 요약해 줘."
+    ],
+    [
+     35.935,
+     37.515,
+     "S2",
+     "ko",
+     "잠깐, 그만."
+    ],
+    [
+     39.015,
+     41.155,
+     "S1",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     42.118,
+     44.358,
+     "S2",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     45.378,
+     47.228,
+     "S4",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     46.493,
+     48.553,
+     "S1",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     49.582,
+     51.162,
+     "S3",
+     "en",
+     "Hey Jarvis, what did we decide"
+    ],
+    [
+     51.951,
+     52.691,
+     "S3",
+     "en",
+     "about the launch?"
+    ],
+    [
+     55.548,
+     56.238,
+     "S2",
+     "ko",
+     "멈춰."
+    ],
+    [
+     57.738,
+     59.878,
+     "S1",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     60.646,
+     62.996,
+     "S3",
+     "en",
+     "Jarvis is also the name of our new vendor."
+    ],
+    [
+     63.526,
+     66.846,
+     "S2",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 13.233,
+     "end": 16.854,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 아까 결정한 거 ... 정리해 줘."
+    },
+    {
+     "start": 30.525,
+     "end": 33.335,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "Hey Jarvis, 회의록 요약해 줘."
+    },
+    {
+     "start": 49.582,
+     "end": 52.691,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, what did we decide ... about the launch?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 19.52,
+     "end": 20.15,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "그만해요."
+    },
+    {
+     "start": 35.935,
+     "end": 37.515,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "잠깐, 그만."
+    },
+    {
+     "start": 55.548,
+     "end": 56.238,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "멈춰."
+    }
+   ],
+   "turn_pauses": [
+    [
+     15.823,
+     16.284
+    ],
+    [
+     51.162,
+     51.951
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_20",
+   "kind": "no_call",
+   "split": "holdout",
+   "duration": 12.914,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -8.7
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -0.1
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -3.0
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -10.9
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.78,
+     "S2",
+     "en",
+     "Can we push the client demo to Thursday?"
+    ],
+    [
+     3.676,
+     6.006,
+     "S3",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     5.403,
+     7.543,
+     "S2",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     6.767,
+     9.087,
+     "S3",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     9.592,
+     11.072,
+     "S4",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "turn_pauses": [],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_21",
+   "kind": "call",
+   "split": "holdout",
+   "duration": 85.075,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -2.3
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -11.5
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -9.1
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -9.9
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -8.2
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.57,
+     "S4",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     4.3,
+     6.67,
+     "S5",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     7.288,
+     10.158,
+     "S4",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     10.511,
+     13.231,
+     "S2",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     12.717,
+     14.837,
+     "S3",
+     "en",
+     "Can we push the client demo to Thursday?"
+    ],
+    [
+     15.659,
+     17.709,
+     "S3",
+     "en",
+     "Hey Jarvis, who is presenting next?"
+    ],
+    [
+     19.674,
+     20.164,
+     "S1",
+     "en",
+     "Okay, got it."
+    ],
+    [
+     27.749,
+     30.229,
+     "S5",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     30.556,
+     32.996,
+     "S2",
+     "ko",
+     "고객 데모를 목요일로 미룰 수 있을까요?"
+    ],
+    [
+     34.064,
+     36.414,
+     "S1",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     37.542,
+     39.862,
+     "S5",
+     "ko",
+     "헤이 자비스, 아까 결정한 거"
+    ],
+    [
+     40.512,
+     41.252,
+     "S5",
+     "ko",
+     "정리해 줘."
+    ],
+    [
+     51.292,
+     53.722,
+     "S2",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     53.289,
+     55.489,
+     "S3",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ],
+    [
+     55.985,
+     58.335,
+     "S5",
+     "ko",
+     "그만큼 시간이 더 필요할 것 같아요."
+    ],
+    [
+     59.017,
+     60.497,
+     "S3",
+     "en",
+     "Hey Jarvis, can you check"
+    ],
+    [
+     60.988,
+     62.258,
+     "S3",
+     "en",
+     "the budget for next month?"
+    ],
+    [
+     64.874,
+     67.134,
+     "S1",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ],
+    [
+     72.298,
+     75.418,
+     "S4",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     76.491,
+     78.931,
+     "S3",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     79.942,
+     81.542,
+     "S5",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     82.158,
+     84.588,
+     "S2",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 15.659,
+     "end": 17.709,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, who is presenting next?"
+    },
+    {
+     "start": 37.542,
+     "end": 41.252,
+     "lang": "ko",
+     "speaker": "S5",
+     "text": "헤이 자비스, 아까 결정한 거 ... 정리해 줘."
+    },
+    {
+     "start": 59.017,
+     "end": 62.258,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, can you check ... the budget for next month?"
+    }
+   ],
+   "stops": [],
+   "turn_pauses": [
+    [
+     39.862,
+     40.512
+    ],
+    [
+     60.497,
+     60.988
+    ]
+   ],
+   "talk_during_reply": [
+    [
+     19.674,
+     20.164,
+     "Okay, got it."
+    ],
+    [
+     64.874,
+     67.134,
+     "The service desk got forty tickets yesterday."
+    ]
+   ]
+  },
+  {
+   "id": "holdout_22",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 61.695,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -0.7
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -10.1
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -1.5
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -6.4
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.91,
+     "S1",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     3.456,
+     5.056,
+     "S3",
+     "ko",
+     "다들 늦어서 죄송합니다."
+    ],
+    [
+     4.27,
+     6.12,
+     "S4",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     5.703,
+     8.023,
+     "S3",
+     "ko",
+     "헤이 자비스, 아까 결정한 거"
+    ],
+    [
+     8.56,
+     9.3,
+     "S3",
+     "ko",
+     "정리해 줘."
+    ],
+    [
+     12.554,
+     13.164,
+     "S4",
+     "ko",
+     "멈춰요."
+    ],
+    [
+     14.664,
+     15.894,
+     "S1",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     16.821,
+     18.961,
+     "S2",
+     "en",
+     "Jarvis is also the name of our new vendor."
+    ],
+    [
+     19.648,
+     21.748,
+     "S1",
+     "en",
+     "Hey everyone, sorry I'm a bit late."
+    ],
+    [
+     22.281,
+     24.601,
+     "S3",
+     "ko",
+     "헤이 자비스, 아까 결정한 거"
+    ],
+    [
+     25.491,
+     26.231,
+     "S3",
+     "ko",
+     "정리해 줘."
+    ],
+    [
+     29.873,
+     30.333,
+     "S2",
+     "en",
+     "Stop."
+    ],
+    [
+     31.833,
+     33.823,
+     "S4",
+     "ko",
+     "오늘 회의록은 누가 작성하나요?"
+    ],
+    [
+     34.878,
+     36.768,
+     "S3",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     37.754,
+     40.144,
+     "S1",
+     "en",
+     "The contract renewal is due at the end of the month."
+    ],
+    [
+     39.478,
+     41.708,
+     "S4",
+     "ko",
+     "그만큼 시간이 더 필요할 것 같아요."
+    ],
+    [
+     42.497,
+     44.147,
+     "S1",
+     "en",
+     "Travis said the numbers look fine."
+    ],
+    [
+     43.466,
+     45.516,
+     "S2",
+     "en",
+     "Hey Jarvis, who is presenting next?"
+    ],
+    [
+     49.261,
+     50.351,
+     "S1",
+     "en",
+     "Stop, please."
+    ],
+    [
+     51.851,
+     54.931,
+     "S4",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     55.779,
+     58.159,
+     "S3",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     58.838,
+     61.208,
+     "S1",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 5.703,
+     "end": 9.3,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "헤이 자비스, 아까 결정한 거 ... 정리해 줘."
+    },
+    {
+     "start": 22.281,
+     "end": 26.231,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "헤이 자비스, 아까 결정한 거 ... 정리해 줘."
+    },
+    {
+     "start": 43.466,
+     "end": 45.516,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Hey Jarvis, who is presenting next?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 12.554,
+     "end": 13.164,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "멈춰요."
+    },
+    {
+     "start": 29.873,
+     "end": 30.333,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Stop."
+    },
+    {
+     "start": 49.261,
+     "end": 50.351,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Stop, please."
+    }
+   ],
+   "turn_pauses": [
+    [
+     8.023,
+     8.56
+    ],
+    [
+     24.601,
+     25.491
+    ]
+   ],
+   "talk_during_reply": []
+  },
+  {
+   "id": "holdout_23",
+   "kind": "call_stop",
+   "split": "holdout",
+   "duration": 72.614,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -3.1
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -9.0
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -4.4
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -10.4
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -11.2
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.78,
+     "S5",
+     "en",
+     "Can we push the client demo to Thursday?"
+    ],
+    [
+     3.848,
+     6.848,
+     "S2",
+     "ko",
+     "서비스 데스크에 어제 문의가 사십 건 들어왔어요."
+    ],
+    [
+     7.643,
+     10.233,
+     "S1",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     10.831,
+     12.891,
+     "S2",
+     "ko",
+     "자비스라는 이름의 업체도 있어요."
+    ],
+    [
+     13.39,
+     15.68,
+     "S3",
+     "en",
+     "Our churn went down two percent last month."
+    ],
+    [
+     16.562,
+     18.992,
+     "S5",
+     "en",
+     "Hey Jarvis, can you list the action items?"
+    ],
+    [
+     21.603,
+     22.203,
+     "S2",
+     "ko",
+     "멈춰."
+    ],
+    [
+     23.703,
+     25.553,
+     "S4",
+     "ko",
+     "화면 공유 좀 해 주실 수 있나요?"
+    ],
+    [
+     26.311,
+     28.641,
+     "S3",
+     "en",
+     "Let's park that topic for the next meeting."
+    ],
+    [
+     29.392,
+     31.692,
+     "S5",
+     "en",
+     "I think we need one more designer on the team."
+    ],
+    [
+     32.757,
+     34.977,
+     "S3",
+     "en",
+     "Hey Jarvis, can you list the action items?"
+    ],
+    [
+     37.491,
+     38.591,
+     "S5",
+     "en",
+     "Jarvis, stop."
+    ],
+    [
+     40.091,
+     42.331,
+     "S5",
+     "en",
+     "Stop by my desk after lunch if you can."
+    ],
+    [
+     42.657,
+     44.977,
+     "S3",
+     "en",
+     "Please don't stop the pilot before the review."
+    ],
+    [
+     45.611,
+     48.041,
+     "S4",
+     "ko",
+     "계약 갱신은 이번 달 말까지입니다."
+    ],
+    [
+     47.591,
+     49.961,
+     "S2",
+     "ko",
+     "지난달 이탈률이 이 퍼센트 줄었어요."
+    ],
+    [
+     50.842,
+     53.142,
+     "S3",
+     "en",
+     "Hey Jarvis, remind us about the deadline."
+    ],
+    [
+     56.46,
+     57.17,
+     "S1",
+     "ko",
+     "멈춰요."
+    ],
+    [
+     58.67,
+     61.79,
+     "S1",
+     "ko",
+     "파일럿은 검토 전까지 멈추지 말아 주세요."
+    ],
+    [
+     62.714,
+     64.014,
+     "S5",
+     "en",
+     "Who is taking notes today?"
+    ],
+    [
+     64.713,
+     67.513,
+     "S2",
+     "ko",
+     "그 주제는 다음 회의 때 다시 이야기하죠."
+    ],
+    [
+     68.281,
+     70.831,
+     "S5",
+     "en",
+     "The service desk got forty tickets yesterday."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 16.562,
+     "end": 18.992,
+     "lang": "en",
+     "speaker": "S5",
+     "text": "Hey Jarvis, can you list the action items?"
+    },
+    {
+     "start": 32.757,
+     "end": 34.977,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, can you list the action items?"
+    },
+    {
+     "start": 50.842,
+     "end": 53.142,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, remind us about the deadline."
+    }
+   ],
+   "stops": [
+    {
+     "start": 21.603,
+     "end": 22.203,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "멈춰."
+    },
+    {
+     "start": 37.491,
+     "end": 38.591,
+     "lang": "en",
+     "speaker": "S5",
+     "text": "Jarvis, stop."
+    },
+    {
+     "start": 56.46,
+     "end": 57.17,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "멈춰요."
+    }
+   ],
+   "turn_pauses": [],
+   "talk_during_reply": []
+  }
+ ]
+}

@@ -12,8 +12,9 @@ import soundfile as sf
 from quietgate.config import ROOT, load_config
 
 SCENE = ROOT / "data" / "scenes" / "scene_11.flac"
-needs = pytest.mark.skipif(not SCENE.exists() or not (ROOT / "models").exists(),
-                           reason="needs data/ and models/")
+TIMELINES = ROOT / "results" / "dev" / "timelines.json"
+needs = pytest.mark.skipif(not SCENE.exists() or not TIMELINES.exists() or not (ROOT / "models").exists(),
+                           reason="needs data/, results/ (run eval) and models/")
 
 
 @needs
@@ -63,6 +64,6 @@ def test_live_loop_matches_eval(monkeypatch, capsys):
 
     starts = [round(t, 2) for e, t in events if e == "start"]
     stops = [round(t, 2) for e, t in events[:-1] if e == "stop"]   # last stop = Ctrl+C cleanup
-    tl = json.loads((ROOT / "results" / "timelines.json").read_text())["scene_11"]["quietgate"]
+    tl = json.loads(TIMELINES.read_text())["scene_11"]["quietgate_v2"]   # live mode runs v2 (default config)
     assert starts == [round(a, 2) for a, _, _ in tl]
     assert stops == [round(b, 2) for _, b, how in tl if how == "stop"]

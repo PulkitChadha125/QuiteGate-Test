@@ -1,0 +1,4 @@
+{"t": 25.68, "gate": "quietgate_v1", "event": "start", "state_from": "ARMED"}
+{"t": 28.96, "gate": "quietgate_v1", "event": "stop", "state_from": "SPEAKING"}
+{"t": 43.28, "gate": "quietgate_v1", "event": "start", "state_from": "ARMED"}
+{"t": 46.48, "gate": "quietgate_v1", "event": "stop", "state_from": "SPEAKING"}

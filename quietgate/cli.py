@@ -1,7 +1,7 @@
 """QuietGate command line.
 
 python -m quietgate.cli fetch-models   # openWakeWord + Silero VAD + Vosk EN/KO small models
-python -m quietgate.cli make-data      # synthetic scenes + data/labels.json (needs internet once, for edge-tts)
+python -m quietgate.cli make-data      # dev + holdout synthetic scenes (needs internet once, for edge-tts)
 python -m quietgate.cli eval           # baseline vs QuietGate -> results/report.md
 python -m quietgate.cli live           # microphone demo (use headphones)
 python -m quietgate.cli serve --port 6060   # web page for the client
@@ -39,7 +39,8 @@ def main(argv=None):
     ap.add_argument("--config", default=None)
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("fetch-models")
-    sub.add_parser("make-data")
+    md = sub.add_parser("make-data")
+    md.add_argument("--set", choices=["dev", "holdout", "all"], default="all")
     e = sub.add_parser("eval")
     e.add_argument("--workers", type=int, default=4)
     sub.add_parser("live")
@@ -52,10 +53,16 @@ def main(argv=None):
         fetch_models()
     elif a.cmd == "make-data":
         from .scenarios import make_data
-        meta = make_data(load_config(a.config))
-        sc = meta["scenes"]
-        print(f"built {len(sc)} scenes, {sum(s['duration'] for s in sc)/60:.1f} min, "
-              f"{sum(len(s['calls']) for s in sc)} calls, {sum(len(s['stops']) for s in sc)} stops")
+        from .holdout import make_holdout
+        cfg = load_config(a.config)
+        for name, fn in (("dev", make_data), ("holdout", make_holdout)):
+            if a.set in (name, "all"):
+                sc = fn(cfg)["scenes"]
+                print(f"[{name}] built {len(sc)} scenes, {sum(s['duration'] for s in sc)/60:.1f} min, "
+                      f"{sum(len(s['calls']) for s in sc)} calls "
+                      f"(KO {sum(c['lang'] == 'ko' for s in sc for c in s['calls'])}), "
+                      f"{sum(len(s['stops']) for s in sc)} stops "
+                      f"(KO {sum(c['lang'] == 'ko' for s in sc for c in s['stops'])})")
     elif a.cmd == "eval":
         from .run_eval import run
         print(run(a.config, a.workers))

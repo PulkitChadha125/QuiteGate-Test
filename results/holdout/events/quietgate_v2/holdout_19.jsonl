@@ -1,0 +1,7 @@
+{"t": 18.08, "gate": "quietgate_v2", "event": "start", "state_from": "ARMED"}
+{"t": 20.32, "gate": "quietgate_v2", "event": "stop", "state_from": "SPEAKING"}
+{"t": 34.4, "gate": "quietgate_v2", "event": "start", "state_from": "ARMED"}
+{"t": 37.84, "gate": "quietgate_v2", "event": "stop", "state_from": "SPEAKING"}
+{"t": 53.68, "gate": "quietgate_v2", "event": "start", "state_from": "ARMED"}
+{"t": 56.32, "gate": "quietgate_v2", "event": "stop", "state_from": "SPEAKING"}
+{"t": 68.0, "gate": "quietgate_v2", "event": "start", "state_from": "ARMED"}

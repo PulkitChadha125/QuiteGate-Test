@@ -1,0 +1,202 @@
+{
+ "meta": {
+  "n": 24,
+  "labels_sha1": "5252714e60ff"
+ },
+ "targets": {
+  "uncalled_per_10min": 0.5,
+  "talk_over_starts": 0,
+  "missed_call_rate": 0.1,
+  "stop_latency_p95_s": 0.5,
+  "stop_miss_rate": 0.05,
+  "reply_delay_median_s": 1.5
+ },
+ "systems": {
+  "baseline": {
+   "holdout": {
+    "minutes": 24.09,
+    "assistant_starts": 99,
+    "uncalled": 49,
+    "uncalled_per_10min": 20.34,
+    "talk_over_starts": 10,
+    "calls": 54,
+    "missed_calls": 14,
+    "missed_call_rate": 0.259,
+    "missed_call_rate_by_lang": {
+     "en": {
+      "n": 25,
+      "value": 0.4
+     },
+     "ko": {
+      "n": 29,
+      "value": 0.138
+     }
+    },
+    "reply_delay_median_s": 1.079,
+    "stops_applicable": 30,
+    "stops_not_applicable": 6,
+    "stop_latency_p50_s": 5.191,
+    "stop_latency_p95_s": 6.046,
+    "stop_miss_rate": 0.9,
+    "stop_miss_rate_by_lang": {
+     "en": {
+      "n": 13,
+      "value": 0.846
+     },
+     "ko": {
+      "n": 17,
+      "value": 0.941
+     }
+    },
+    "missed_call_rate_by_seat": {
+     "near": {
+      "n": 27,
+      "value": 0.259
+     },
+     "far": {
+      "n": 27,
+      "value": 0.259
+     }
+    },
+    "stop_miss_rate_by_seat": {
+     "near": {
+      "n": 19,
+      "value": 0.947
+     },
+     "far": {
+      "n": 11,
+      "value": 0.818
+     }
+    },
+    "mid_turn_cutins": 5,
+    "turn_pauses": 25,
+    "false_stop_cuts": 0,
+    "talk_during_reply": 16
+   }
+  },
+  "quietgate_v1": {
+   "holdout": {
+    "minutes": 24.09,
+    "assistant_starts": 49,
+    "uncalled": 4,
+    "uncalled_per_10min": 1.66,
+    "talk_over_starts": 0,
+    "calls": 54,
+    "missed_calls": 9,
+    "missed_call_rate": 0.167,
+    "missed_call_rate_by_lang": {
+     "en": {
+      "n": 25,
+      "value": 0.08
+     },
+     "ko": {
+      "n": 29,
+      "value": 0.241
+     }
+    },
+    "reply_delay_median_s": 1.072,
+    "stops_applicable": 30,
+    "stops_not_applicable": 6,
+    "stop_latency_p50_s": 0.453,
+    "stop_latency_p95_s": 5.695,
+    "stop_miss_rate": 0.267,
+    "stop_miss_rate_by_lang": {
+     "en": {
+      "n": 12,
+      "value": 0.0
+     },
+     "ko": {
+      "n": 18,
+      "value": 0.444
+     }
+    },
+    "missed_call_rate_by_seat": {
+     "near": {
+      "n": 27,
+      "value": 0.148
+     },
+     "far": {
+      "n": 27,
+      "value": 0.185
+     }
+    },
+    "stop_miss_rate_by_seat": {
+     "near": {
+      "n": 18,
+      "value": 0.222
+     },
+     "far": {
+      "n": 12,
+      "value": 0.333
+     }
+    },
+    "mid_turn_cutins": 6,
+    "turn_pauses": 25,
+    "false_stop_cuts": 4,
+    "talk_during_reply": 16
+   }
+  },
+  "quietgate_v2": {
+   "holdout": {
+    "minutes": 24.09,
+    "assistant_starts": 58,
+    "uncalled": 10,
+    "uncalled_per_10min": 4.15,
+    "talk_over_starts": 1,
+    "calls": 54,
+    "missed_calls": 6,
+    "missed_call_rate": 0.111,
+    "missed_call_rate_by_lang": {
+     "en": {
+      "n": 25,
+      "value": 0.16
+     },
+     "ko": {
+      "n": 29,
+      "value": 0.069
+     }
+    },
+    "reply_delay_median_s": 1.077,
+    "stops_applicable": 33,
+    "stops_not_applicable": 3,
+    "stop_latency_p50_s": 0.11,
+    "stop_latency_p95_s": 5.382,
+    "stop_miss_rate": 0.121,
+    "stop_miss_rate_by_lang": {
+     "en": {
+      "n": 15,
+      "value": 0.067
+     },
+     "ko": {
+      "n": 18,
+      "value": 0.167
+     }
+    },
+    "missed_call_rate_by_seat": {
+     "near": {
+      "n": 27,
+      "value": 0.148
+     },
+     "far": {
+      "n": 27,
+      "value": 0.074
+     }
+    },
+    "stop_miss_rate_by_seat": {
+     "near": {
+      "n": 20,
+      "value": 0.15
+     },
+     "far": {
+      "n": 13,
+      "value": 0.077
+     }
+    },
+    "mid_turn_cutins": 5,
+    "turn_pauses": 25,
+    "false_stop_cuts": 4,
+    "talk_during_reply": 16
+   }
+  }
+ }
+}

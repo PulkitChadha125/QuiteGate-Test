@@ -1,3 +1,0 @@
-{"t": 22.8, "gate": "quietgate_oww_only", "event": "start", "state_from": "ARMED"}
-{"t": 41.36, "gate": "quietgate_oww_only", "event": "start", "state_from": "ARMED"}
-{"t": 44.08, "gate": "quietgate_oww_only", "event": "stop", "state_from": "SPEAKING"}

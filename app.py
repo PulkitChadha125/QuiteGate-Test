@@ -1,7 +1,11 @@
 """QuietGate review page (Gradio). Run:  python app.py --port 6060   then open http://<server>:6060
 
-Tabs: results (before vs after) / listen to a test scene with both gates / try your own audio / raw files.
+Tabs: results (before vs after) / listen to a test scene / try your own audio / raw files / docs.
 """
+import os
+
+os.environ.setdefault("GRADIO_ANALYTICS_ENABLED", "False")   # no usage statistics sent to Gradio
+
 import argparse
 import html
 import json
@@ -18,21 +22,31 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from quietgate.config import load_config  # noqa: E402
-from quietgate.gate import NaiveGate, TurnGate, simulate  # noqa: E402
-from quietgate.run_eval import gate_factories, to_signals  # noqa: E402
+from quietgate.gate import simulate  # noqa: E402
+from quietgate.run_eval import SETS, V1_CONFIG, systems, to_signals  # noqa: E402
 
 CFG = load_config()
+CFG_V1 = load_config(V1_CONFIG)
 SR = CFG["sample_rate"]
 DATA, RESULTS = ROOT / "data", ROOT / "results"
-LABELS = json.loads((DATA / "labels.json").read_text(encoding="utf-8"))
-SCENES = {s["id"]: s for s in LABELS["scenes"]}
-TIMELINES = json.loads((RESULTS / "timelines.json").read_text())
+SCENES, TIMELINES, SCENE_AUDIO = {}, {}, {}
+REPLY_S = 8.14
+for _set in ("holdout", "dev"):          # held-out set first: it holds the headline numbers
+    _lab_path, _tl_path = SETS[_set] / "labels.json", RESULTS / _set / "timelines.json"
+    if _lab_path.exists() and _tl_path.exists():
+        _labels = json.loads(_lab_path.read_text(encoding="utf-8"))
+        _tl = json.loads(_tl_path.read_text())
+        REPLY_S = _labels["reply_s"]
+        for _s in _labels["scenes"]:
+            SCENES[_s["id"]] = dict(_s, set=_set)
+            TIMELINES[_s["id"]] = _tl[_s["id"]]
+            SCENE_AUDIO[_s["id"]] = SETS[_set] / "scenes" / f"{_s['id']}.flac"
 REPLY, _ = sf.read(ROOT / "assets" / "reply_en.wav", dtype="float32")
-REPLY_S = LABELS["reply_s"]
 DIST = ROOT / "dist"
 
-COL = {"en": "#4C78A8", "ko": "#9D6FD0", "baseline": "#D9534F", "quietgate": "#2E9E5B",
-       "call": "#F0AD4E", "stop": "#333333"}
+COL = {"en": "#4C78A8", "ko": "#9D6FD0", "baseline": "#D9534F", "quietgate_v1": "#8C8C8C",
+       "quietgate_v2": "#2E9E5B", "call": "#F0AD4E", "stop": "#333333"}
+GATE_LABEL = {"baseline": "naive (before)", "quietgate_v1": "QuietGate v1", "quietgate_v2": "QuietGate v2"}
 KIND = {"no_call": "meeting chatter, nobody calls the assistant",
         "call": "someone calls \"Hey Jarvis\"",
         "call_stop": "someone calls, then says stop while it answers"}
@@ -68,8 +82,8 @@ def timeline_svg(duration, speech, calls, stops, gates):
                    f'stroke="{COL["stop"]}" stroke-dasharray="4 3"><title>stop: {html.escape(s.get("text",""))}</title></line>')
     y += 6
     for name, iv in gates:
-        c = COL["baseline"] if name.startswith("baseline") else COL["quietgate"]
-        out.append(f'<text x="6" y="{y+14}" fill="{c}" font-weight="bold">{html.escape(name)}</text>')
+        c = COL.get(name, "#2E9E5B")
+        out.append(f'<text x="6" y="{y+14}" fill="{c}" font-weight="bold">{html.escape(GATE_LABEL.get(name, name))}</text>')
         for a, b, *_ in iv:
             out.append(f'<rect x="{x(a):.1f}" y="{y+3}" width="{max(1, x(b)-x(a)):.1f}" height="{rowh-6}" fill="{c}" rx="3">'
                        f'<title>assistant speaks {a:.2f}-{b:.2f}s</title></rect>')
@@ -79,7 +93,8 @@ def timeline_svg(duration, speech, calls, stops, gates):
               f'<span style="color:{COL["en"]}">■</span> English speech &nbsp; <span style="color:{COL["ko"]}">■</span> Korean speech &nbsp; '
               f'<span style="color:{COL["call"]}">■</span> "Hey Jarvis" call &nbsp; ┆ stop command &nbsp; '
               f'<span style="color:{COL["baseline"]}">■</span> naive assistant talking &nbsp; '
-              f'<span style="color:{COL["quietgate"]}">■</span> QuietGate assistant talking</div>')
+              f'<span style="color:{COL["quietgate_v1"]}">■</span> QuietGate v1 &nbsp; '
+              f'<span style="color:{COL["quietgate_v2"]}">■</span> QuietGate v2 talking</div>')
     return "".join(out) + legend
 
 
@@ -107,17 +122,23 @@ def count_line(lab, iv, cfg_eval):
 # ------------------------------------------------------------------ tab callbacks
 def show_scene(scene_id):
     lab = SCENES[scene_id]
-    audio, _ = sf.read(DATA / "scenes" / f"{scene_id}.flac", dtype="float32")
+    audio, _ = sf.read(SCENE_AUDIO[scene_id], dtype="float32")
     tl = TIMELINES[scene_id]
     svg = timeline_svg(lab["duration"], lab["speech"], lab["calls"], lab["stops"],
-                       [("baseline (before)", tl["baseline"]), ("QuietGate (after)", tl["quietgate"])])
+                       [(g, tl[g]) for g in ("baseline", "quietgate_v1", "quietgate_v2")])
     calls = "; ".join(f'"{c["text"]}" at {c["start"]:.1f}s' for c in lab["calls"]) or "none"
     stops = "; ".join(f'"{s["text"]}" at {s["start"]:.1f}s' for s in lab["stops"]) or "none"
-    info = (f"**{scene_id}** ({lab['split']} split): {KIND[lab['kind']]}. {lab['duration']:.0f} s, "
-            f"{len(lab['speakers'])} speakers.  \n**Calls:** {calls}  \n**Stops:** {stops}  \n"
-            f"**Baseline:** {count_line(lab, tl['baseline'], CFG['eval'])}  \n"
-            f"**QuietGate:** {count_line(lab, tl['quietgate'], CFG['eval'])}")
-    return info, svg, render_mix(audio, tl["baseline"]), render_mix(audio, tl["quietgate"])
+    extra = ""
+    if lab.get("turn_pauses"):
+        extra += f"  \n**Mid-sentence pauses in calls:** {len(lab['turn_pauses'])}"
+    if lab.get("talk_during_reply"):
+        extra += "  \n**People talking during a reply:** " + "; ".join(f'"{t[2]}"' for t in lab["talk_during_reply"])
+    info = (f"**{scene_id}** ({lab['set']} set): {KIND[lab['kind']]}. {lab['duration']:.0f} s, "
+            f"{len(lab['speakers'])} speakers.  \n**Calls:** {calls}  \n**Stops:** {stops}{extra}  \n"
+            f"**Naive (before):** {count_line(lab, tl['baseline'], CFG['eval'])}  \n"
+            f"**QuietGate v1:** {count_line(lab, tl['quietgate_v1'], CFG['eval'])}  \n"
+            f"**QuietGate v2:** {count_line(lab, tl['quietgate_v2'], CFG['eval'])}")
+    return info, svg, render_mix(audio, tl["baseline"]), render_mix(audio, tl["quietgate_v2"])
 
 
 def analyse_upload(path):
@@ -142,9 +163,9 @@ def analyse_upload(path):
     block = SR * CFG["block_ms"] // 1000
     rows = detect_stream([x[i:i + block] for i in range(0, len(x) - block + 1, block)], CFG)
     res = {}
-    for name, (make, use_ko) in gate_factories(CFG).items():
-        if name == "quietgate_oww_only":
-            continue
+    for name, (make, _cfg, use_ko) in systems(CFG, CFG_V1).items():
+        if name == "quietgate_v1":
+            continue     # uploads run the current detectors (v2) only
         res[name], _ = simulate(make(), to_signals(rows, use_ko), REPLY_S)
     # build pseudo speech rows from the VAD so the timeline has something to show
     speech, cur = [], None
@@ -171,18 +192,21 @@ def analyse_upload(path):
     stops = onsets(lambda r: r["stop"])
     svg = timeline_svg(dur, speech, [{"start": t - 0.3, "end": t, "text": "wake"} for t in wakes],
                        [{"start": t, "end": t, "text": "stop"} for t in stops],
-                       [("baseline (before)", res["baseline"]), ("QuietGate (after)", res["quietgate"])])
+                       [("baseline", res["baseline"]), ("quietgate_v2", res["quietgate_v2"])])
     info = (f"{dur:.1f} s analysed. Wake detections at: {', '.join(f'{t:.2f}s' for t in wakes) or 'none'}. "
             f"Stop words at: {', '.join(f'{t:.2f}s' for t in stops) or 'none'}.  \n"
-            f"Baseline spoke {len(res['baseline'])} times; QuietGate spoke {len(res['quietgate'])} times. "
+            f"Naive assistant spoke {len(res['baseline'])} times; QuietGate v2 spoke {len(res['quietgate_v2'])} times. "
             f"(Speech row = detected voice activity, not ground truth.)")
-    return info, svg, render_mix(a, res["baseline"]), render_mix(a, res["quietgate"])
+    return info, svg, render_mix(a, res["baseline"]), render_mix(a, res["quietgate_v2"])
 
 
 # ------------------------------------------------------------------ raw files
-RAW = ["README.md", "intent.md", "evidence.md", "directive.md", "requirements.txt", "run_project.bat", "app.py",
-       "config/default.yaml", "results/report.md", "results/metrics.json", "results/failures_test.md",
-       "data/labels.json", "QuietGate_Architecture_Plan.md"]
+RAW = ["README.md", "intent.md", "evidence.md", "directive.md", "loom_script.md", "requirements.txt",
+       "run_project.bat", "app.py", "config/default.yaml", "config/v1.yaml", "config/ko_vocab.txt",
+       "results/report.md", "results/v2_freeze.txt",
+       "results/holdout/metrics.json", "results/holdout/failures_quietgate_v2.md",
+       "results/holdout/failures_quietgate_v1.md", "results/dev/metrics.json",
+       "data/holdout/labels.json", "data/labels.json"]
 
 
 def build_zips():
@@ -191,23 +215,31 @@ def build_zips():
     with zipfile.ZipFile(code_zip, "w", zipfile.ZIP_DEFLATED) as z:
         for p in ROOT.rglob("*"):
             rel = p.relative_to(ROOT)
-            if p.is_dir() or rel.parts[0] in {".venv", "models", "dist", ".gradio", ".pytest_cache"} \
-                    or "__pycache__" in rel.parts or rel.parts[:2] in {("data", "tts_cache"), ("data", "signals"),
-                                                                       ("data", "scenes")}:
+            # skip every hidden folder (.git history, .venv, .claude, caches), models and build output
+            if p.is_dir() or (rel.parts[0].startswith(".") and rel.parts[0] != ".gitignore") \
+                    or rel.parts[0] in {"models", "dist"} \
+                    or "__pycache__" in rel.parts or "signals" in rel.parts or "scenes" in rel.parts \
+                    or rel.parts[:2] == ("data", "tts_cache") or rel.suffix == ".log":
                 continue
             z.write(p, rel.as_posix())
     data_zip = DIST / "quietgate_test_audio.zip"
-    if not data_zip.exists() or data_zip.stat().st_mtime < (DATA / "labels.json").stat().st_mtime:
+    newest = max((SETS[s] / "labels.json").stat().st_mtime for s in SETS if (SETS[s] / "labels.json").exists())
+    if not data_zip.exists() or data_zip.stat().st_mtime < newest:
         with zipfile.ZipFile(data_zip, "w", zipfile.ZIP_STORED) as z:
-            for p in sorted((DATA / "scenes").glob("*.flac")):
-                z.write(p, f"data/scenes/{p.name}")
-            z.write(DATA / "labels.json", "data/labels.json")
+            for d in SETS.values():
+                if not (d / "labels.json").exists():
+                    continue
+                rel = d.relative_to(ROOT).as_posix()
+                for p in sorted((d / "scenes").glob("*.flac")):
+                    z.write(p, f"{rel}/scenes/{p.name}")
+                z.write(d / "labels.json", f"{rel}/labels.json")
     return [str(code_zip), str(data_zip)]
 
 
 def raw_files():
     """Copy the reviewable files into dist/raw so only dist/ is ever served."""
     out_dir = DIST / "raw"
+    shutil.rmtree(out_dir, ignore_errors=True)    # never serve stale copies of old files
     out_dir.mkdir(parents=True, exist_ok=True)
     out = []
     for f in RAW:
@@ -235,50 +267,56 @@ between the microphone and the assistant's voice that decides one thing: *may th
 2. **Never during someone's turn:** after the call it waits until the room is quiet (700 ms).
 3. **Stops at once:** "stop", "그만" or "멈춰" cuts the reply.
 
+Headline numbers come from a **held-out set** of 24 meetings with new sentences, built after the code was frozen.
 All audio here is **synthetic** (Microsoft edge-tts voices). No real people were recorded.
 """
 
 
 def build_ui():
     zips = build_zips()
-    with gr.Blocks(title="QuietGate") as demo:
+    with gr.Blocks(title="QuietGate", analytics_enabled=False) as demo:
         gr.Markdown(INTRO)
         with gr.Tab("1. Results (before vs after)"):
             gr.Markdown(read_doc("results/report.md"))
         with gr.Tab("2. Listen to a test scene"):
-            gr.Markdown("Pick a scene. The **red** player is a naive assistant that answers after any pause and "
-                        "ignores stop. The **green** player is QuietGate. The assistant's reply is mixed in where each "
-                        "one decided to talk. Hover over the bars to see what was said.")
-            choices = [(f"{sid}: {KIND[s['kind']]} ({s['split']})", sid) for sid, s in SCENES.items()]
-            dd = gr.Dropdown(choices=choices, value="scene_11", label="Scene")
+            gr.Markdown("Pick a scene (`holdout_*` = held-out test set, `scene_*` = dev set). The left player is a "
+                        "naive assistant that answers after any pause and ignores stop; the right player is "
+                        "QuietGate v2. The assistant's reply is mixed in where each one decided to talk. The timeline "
+                        "also shows v1. Hover over the bars to see what was said.")
+            choices = [(f"{sid}: {KIND[s['kind']]}", sid) for sid, s in SCENES.items()]
+            dd = gr.Dropdown(choices=choices, value=next(iter(SCENES)), label="Scene")
             info = gr.Markdown()
             svg = gr.HTML()
             with gr.Row():
                 a_base = gr.Audio(label="Before: naive assistant", type="numpy")
-                a_qg = gr.Audio(label="After: QuietGate", type="numpy")
-            dd.change(show_scene, dd, [info, svg, a_base, a_qg])
-            demo.load(show_scene, dd, [info, svg, a_base, a_qg])
+                a_qg = gr.Audio(label="After: QuietGate v2", type="numpy")
+            # show_scene only reads files, so several viewers can load scenes at once
+            dd.change(show_scene, dd, [info, svg, a_base, a_qg], concurrency_limit=4)
+            demo.load(show_scene, dd, [info, svg, a_base, a_qg], concurrency_limit=4)
         with gr.Tab("3. Try your own audio"):
             gr.Markdown("Upload a recording (max 3 min; only upload audio you have consent to use). Say "
                         "\"Hey Jarvis, ...\", pause, and later \"stop\". Both gates run on it and you can listen to "
                         "where each one would have talked. Note: in a file the assistant is not really playing, so "
-                        "say \"stop\" about 1-3 s after you finished your question.")
+                        "say \"stop\" about 1-3 s after you finished your question. Use WAV or FLAC at 16 kHz or higher: in "
+                        "our tests, 8 kHz phone audio lost 3 of 4 wake words and MP3 lost 1 of 4. Uploads are "
+                        "analysed one at a time (about 25 s per minute of audio).")
             up = gr.Audio(label="Your audio", type="filepath", sources=["upload"])
             btn = gr.Button("Analyse", variant="primary")
             info2 = gr.Markdown()
             svg2 = gr.HTML()
             with gr.Row():
                 b_base = gr.Audio(label="Before: naive assistant", type="numpy")
-                b_qg = gr.Audio(label="After: QuietGate", type="numpy")
+                b_qg = gr.Audio(label="After: QuietGate v2", type="numpy")
             btn.click(analyse_upload, up, [info2, svg2, b_base, b_qg])
         with gr.Tab("4. Raw files"):
             gr.Markdown("Everything needed to review and rerun the work. `quietgate_source_and_results.zip` has the "
-                        "code, config, docs and results; `quietgate_test_audio.zip` has the 30 synthetic test scenes "
-                        "and their ground-truth labels.")
+                        "code, config, docs and results; `quietgate_test_audio.zip` has the exact test audio (30 dev "
+                        "+ 24 held-out synthetic meetings) and the ground-truth labels. Unzip it into the project "
+                        "folder to reproduce the numbers exactly.")
             gr.File(value=zips, label="Downloads", file_count="multiple", interactive=False)
             gr.File(value=raw_files(), label="Individual files", file_count="multiple", interactive=False)
         with gr.Tab("5. Docs"):
-            for name in ("evidence.md", "intent.md", "README.md"):
+            for name in ("evidence.md", "intent.md", "directive.md", "README.md"):
                 with gr.Accordion(name, open=name == "evidence.md"):
                     gr.Markdown(read_doc(name))
     return demo

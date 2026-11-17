@@ -31,16 +31,23 @@ echo [3/6] Downloading models (openWakeWord, Silero VAD, Vosk EN + KO) ...
 %PY% -m quietgate.cli fetch-models || (echo [ERROR] model download failed & pause & exit /b 1)
 
 if not exist "data\scenes\scene_29.flac" (
-    echo [4/6] Building synthetic test scenes - needs internet once ...
-    %PY% -m quietgate.cli make-data || (echo [ERROR] make-data failed & pause & exit /b 1)
+    echo [4/6] Building the dev test set - needs internet once ...
+    %PY% -m quietgate.cli make-data --set dev || (echo [ERROR] make-data failed & pause & exit /b 1)
 ) else (
-    echo [4/6] Test data already present - skipping
+    echo [4/6] Dev test set already present - skipping
+)
+if not exist "data\holdout\scenes\holdout_23.flac" (
+    echo [4/6] Building the held-out test set - needs internet once ...
+    %PY% -m quietgate.cli make-data --set holdout || (echo [ERROR] make-data failed & pause & exit /b 1)
+) else (
+    echo [4/6] Held-out test set already present - skipping
 )
 
 echo [5/6] Running unit tests and evaluation ...
 %PY% -m pytest -q || (echo [ERROR] unit tests failed & pause & exit /b 1)
 %PY% -m quietgate.cli eval || (echo [ERROR] evaluation failed & pause & exit /b 1)
-%PY% -m quietgate.diagnose --split test >nul
+%PY% -m quietgate.diagnose --set holdout --system quietgate_v2 >nul
+%PY% -m quietgate.diagnose --set holdout --system quietgate_v1 >nul
 
 echo [6/6] Starting the review page on http://localhost:%PORT%  (Ctrl+C to stop)
 %PY% app.py --port %PORT%

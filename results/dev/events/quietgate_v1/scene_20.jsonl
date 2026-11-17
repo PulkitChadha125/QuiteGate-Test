@@ -1,0 +1,2 @@
+{"t": 28.96, "gate": "quietgate_v1", "event": "start", "state_from": "ARMED"}
+{"t": 31.6, "gate": "quietgate_v1", "event": "stop", "state_from": "SPEAKING"}

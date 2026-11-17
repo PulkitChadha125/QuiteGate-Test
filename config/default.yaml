@@ -1,4 +1,7 @@
-# QuietGate configuration - single source of truth for every threshold and timing.
+# QuietGate v2 configuration - single source of truth for every threshold and timing.
+# v2 changes vs v1 (config/v1.yaml): Korean grammar mode, short-command rule for stop words,
+# Korean wake keyword heard through the grammar recogniser.
+name: v2
 sample_rate: 16000
 block_ms: 80
 
@@ -12,24 +15,31 @@ wake:
   refractory_s: 2.0     # ignore new wake events this long after one fired
   korean_vosk: true     # also accept the Korean pronunciation (자비스) heard by the Vosk KO model
   words_ko: ["자비스"]
-  ko_reject_next: ["씨"]  # "자비스 씨가..." = talking about a person, not calling the assistant
+  ko_reject_next: ["씨"]  # "자비스 씨가..." = talking about a person, not calling the assistant.
+                         # (v2 first tried requiring "헤이 자비스"; dropped: in overlapping speech the
+                         #  "헤이" gets swallowed - dev scene_25.)
 
 stop:
   words_en: ["stop"]
   words_ko: ["그만", "멈춰"]   # prefix match, so 그만해 / 멈춰요 also count
   model_en: models/vosk-model-small-en-us-0.15
   model_ko: models/vosk-model-small-ko-0.22
+  ko_mode: grammar      # v2: Vosk KO restricted to keywords + a general vocabulary (config/ko_vocab.txt)
+  ko_vocab: config/ko_vocab.txt
+  ko_keywords: ["그만", "그만해", "그만해요", "멈춰", "멈춰요", "헤이", "자비스"]
+  max_index: 1          # v2: a stop word only counts as 1st or 2nd word of an utterance ("stop", "okay stop")
 
 gate:
   end_of_turn_ms: 700   # caller must be silent this long before the assistant may start
   armed_timeout_s: 8.0  # give up if no end of turn within this time after the wake word
-  reply_s: 6.0          # length of the canned reply (set from assets/reply_en.wav at runtime)
 
 baseline:
   end_of_turn_ms: 700   # naive bot: replies after any 700 ms pause, ignores "stop"
 
 eval:
-  seed: 42
+  seed: 42              # dev set (data/): 30 scenes, used while building v1 and v2
+  holdout_seed: 2026    # held-out set (data/holdout/): new sentences, built after v2 was frozen
+  holdout_n_scenes: 24
   n_scenes: 30
   n_tune: 10            # scenes 0..9 = tune split, 10..29 = test split (metrics reported on test)
   uncalled_window_s: 8.0

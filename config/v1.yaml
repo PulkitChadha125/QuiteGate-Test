@@ -1,0 +1,47 @@
+# QuietGate v1 configuration (frozen 17 Nov 2026) - the first version, kept unchanged for the v1-vs-v2 comparison.
+name: v1
+sample_rate: 16000
+block_ms: 80
+
+vad:
+  threshold: 0.5        # Silero speech probability above which a block counts as speech
+  hangover_ms: 240      # keep "speech" true this long after the last speech block (bridges short gaps inside words)
+
+wake:
+  model: hey_jarvis
+  threshold: 0.5
+  refractory_s: 2.0     # ignore new wake events this long after one fired
+  korean_vosk: true     # also accept the Korean pronunciation (자비스) heard by the Vosk KO model
+  words_ko: ["자비스"]
+  ko_reject_next: ["씨"]  # "자비스 씨가..." = talking about a person, not calling the assistant
+
+stop:
+  words_en: ["stop"]
+  words_ko: ["그만", "멈춰"]   # prefix match, so 그만해 / 멈춰요 also count
+  model_en: models/vosk-model-small-en-us-0.15
+  model_ko: models/vosk-model-small-ko-0.22
+  ko_mode: free         # v1: free recognition for Korean
+  max_index: null       # v1: a stop word counts anywhere in the utterance
+
+gate:
+  end_of_turn_ms: 700   # caller must be silent this long before the assistant may start
+  armed_timeout_s: 8.0  # give up if no end of turn within this time after the wake word
+
+baseline:
+  end_of_turn_ms: 700   # naive bot: replies after any 700 ms pause, ignores "stop"
+
+eval:
+  seed: 42
+  n_scenes: 30
+  n_tune: 10            # scenes 0..9 = tune split, 10..29 = test split (metrics reported on test)
+  uncalled_window_s: 8.0
+  missed_call_window_s: 3.0
+  stop_miss_s: 1.5
+
+targets:
+  uncalled_per_10min: 0.5
+  talk_over_starts: 0
+  missed_call_rate: 0.10
+  stop_latency_p95_s: 0.5
+  stop_miss_rate: 0.05
+  reply_delay_median_s: 1.5

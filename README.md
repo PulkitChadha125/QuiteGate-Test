@@ -8,29 +8,31 @@ between the microphone and the assistant's voice. It decides one thing: **may th
 
 | Rule | How |
 |---|---|
-| 1. Speak only when called by name | Wake phrase "Hey Jarvis" (openWakeWord) or Korean "헤이 자비스" (Vosk KO) |
+| 1. Speak only when called by name | "Hey Jarvis" (openWakeWord) or Korean "헤이 자비스" (Vosk KO grammar); "자비스 씨가…" (a mention) is ignored |
 | 2. Never during someone else's turn | After the call, wait until nobody has spoken for 700 ms (Silero VAD). Never start while speech is detected. |
-| 3. Stop at once when told | "stop" / "그만" / "멈춰" (Vosk EN + KO) cuts the reply in the next 80 ms block |
+| 3. Stop at once when told | "stop" / "그만" / "멈춰" (Vosk EN + KO) as one of the first two words of an utterance cuts the reply in the next 80 ms block |
 
 We do **not** build the assistant's brain. The "reply" is one pre-recorded clip. The deliverable is the gate
 plus a reproducible evaluation with before-and-after numbers.
 
-## Results (test split: 20 synthetic scenes, 22.3 min)
+## Results: held-out set (24 new synthetic meetings, 24.1 min, built after the code was frozen)
 
-| Metric | Target | Before (naive assistant) | After (QuietGate) | |
-|---|---|---|---|---|
-| Uncalled interruptions / 10 min | ≤ 0.5 | 22.45 | **0.45** | PASS |
-| Talk-over starts | 0 | 11 | **0** | PASS |
-| Missed calls | ≤ 10 % | 16.7 % | **11.1 %** (2 of 18) | FAIL (close) |
-| Stop latency p95 | ≤ 0.5 s | 6.15 s | **4.43 s** (p50 0.38 s) | FAIL |
-| Stop misses | ≤ 5 % | 100 % | **12.5 %** (1 of 8) | FAIL |
-| Reply delay after call (median) | ≤ 1.5 s | 1.15 s | **1.12 s** | PASS |
+| Metric | Target | Before (naive) | QuietGate v1 | QuietGate v2 (current) | |
+|---|---|---|---|---|---|
+| Uncalled interruptions / 10 min | ≤ 0.5 | 20.34 | 1.66 | **4.15** | FAIL |
+| Talk-over starts | 0 | 10 | 0 | **1** | FAIL |
+| Missed calls | ≤ 10 % | 25.9 % | 16.7 % | **11.1 %** | FAIL |
+| Stop latency p95 | ≤ 0.5 s | 6.05 s | 5.70 s | **5.38 s** (p50 0.11 s) | FAIL |
+| Stop misses | ≤ 5 % | 90 % | 26.7 % | **12.1 %** | FAIL |
+| Reply delay after call (median) | ≤ 1.5 s | 1.08 s | 1.07 s | **1.08 s** | PASS |
 
-What still fails, plainly: some Korean voices saying "헤이 자비스" are not recognised (2 missed calls), and one
-Korean "그만해" was never recognised by the small Vosk Korean model. With only 8 measurable stops, that single
-miss sets both the stop p95 and the stop-miss rate. English: 0 missed calls (0 of 8), 0 missed stops (0 of 3).
-Full details are in [`evidence.md`](evidence.md), [`results/report.md`](results/report.md) and
-[`results/failures_test.md`](results/failures_test.md).
+Against a naive assistant, v2 interrupts about 5 times less, answers more calls (48 vs 40 of 54) and obeys "stop"
+29 of 33 times instead of 3 of 30. v2 fixed most of the Korean problem: Korean missed calls fell from 24 % to 7 %, and
+Korean stop misses from 44 % to 17 %. **It still does not pass the acceptance test on new sentences.** The main
+remaining failure is that it wakes on name *mentions* ("자비스라는 업체", "Jarvis is our vendor"). On the dev set that
+v2 was built on, it passes all six targets; that number is optimistic and not the headline.
+Full details: [`evidence.md`](evidence.md), [`results/report.md`](results/report.md),
+[`results/holdout/failures_quietgate_v2.md`](results/holdout/failures_quietgate_v2.md).
 
 ## How it works
 
@@ -39,8 +41,8 @@ Full details are in [`evidence.md`](evidence.md), [`results/report.md`](results/
         │
         ├─► Silero VAD (reused)        → is anyone talking?
         ├─► openWakeWord (reused)      → "Hey Jarvis"?
-        └─► Vosk EN + KO (reused)      → "stop" / "그만" / "멈춰"?  "헤이 자비스"?
-                    │
+        └─► Vosk EN + KO (reused)      → "stop" / "그만" / "멈춰"?  "자비스"?
+                    │                    (KO: grammar = keywords + general vocabulary, config/ko_vocab.txt)
                     ▼
         TurnGate state machine (built)       IDLE ──wake──► ARMED ──700 ms silence──► SPEAKING
                     │                         ▲                                         │
@@ -50,10 +52,10 @@ Full details are in [`evidence.md`](evidence.md), [`results/report.md`](results/
         evaluator (built) → before/after metrics vs ground-truth labels
 ```
 
-**Reused:** openWakeWord `hey_jarvis` model, Silero VAD (bundled with openWakeWord), Vosk small EN + KO models,
-edge-tts synthetic voices, Gradio.
-**Built (the gap):** the turn-taking gate, the Korean wake/stop word logic, the naive baseline, the
-synthetic-meeting generator with ground-truth labels, the metrics and evaluator, and the review page.
+**Reused:** openWakeWord `hey_jarvis`, Silero VAD (bundled with openWakeWord), Vosk small EN + KO, edge-tts, Gradio.
+**Built (the gap):** the turn-taking gate, the Korean wake/stop logic, the naive baseline, the synthetic meeting
+generators with ground truth, the metrics, evaluator and failure explainer, and the review page.
+What else was considered and why it was not used: `evidence.md` §2.
 
 ## Quick start (Windows)
 
@@ -64,13 +66,12 @@ run_project.bat          :: port 6060 (default)
 run_project.bat 7000     :: custom port
 ```
 
-It creates `.venv`, installs `requirements.txt`, downloads the models, builds the test data (first time only,
-needs internet), runs the unit tests and the evaluation, then starts the review page at `http://localhost:6060`.
+It creates `.venv`, installs `requirements.txt`, downloads the models, builds any missing test data (needs internet
+once), runs the tests and the evaluation, then starts the review page at `http://localhost:6060`.
 
-> **Exact numbers:** to reproduce the reported numbers exactly, unzip `quietgate_test_audio.zip` (from the review
-> page) into the project folder before running. The bat file then skips rebuilding the audio. Rebuilding with
-> edge-tts gave 2 of 135 voice clips about 10 ms different in our clean-install test. QuietGate's numbers were
-> unchanged, but the baseline's moved slightly (e.g. 22.45 → 22.9 uncalled per 10 min).
+> **Exact numbers:** the test audio is shipped in `data/` and `data/holdout/` (and in `quietgate_test_audio.zip` on the
+> review page). With it in place, nothing is rebuilt and the numbers match exactly. Rebuilding the audio through
+> edge-tts can return a few clips a few milliseconds different, which moves the naive baseline slightly.
 
 ## Manual steps (Windows / Linux / macOS, Python 3.10+)
 
@@ -80,51 +81,54 @@ python -m venv .venv
 pip install -r requirements.txt
 
 python -m quietgate.cli fetch-models    # openWakeWord + Silero VAD + Vosk EN/KO (about 80 MB download, 330 MB unpacked)
-python -m quietgate.cli make-data       # 30 synthetic scenes + data/labels.json (seed 42)
-python -m pytest -q                     # 15 tests (gate, metrics, word logic, live-loop replay)
-python -m quietgate.cli eval            # baseline vs QuietGate -> results/report.md
-python -m quietgate.diagnose            # every failure explained -> results/failures_test.md
+python -m quietgate.cli make-data       # only if data/ is missing: dev (seed 42) + held-out (seed 2026) meetings
+python -m pytest -q                     # 17 tests (gate, metrics, word rules, live-loop replay)
+python -m quietgate.cli eval            # naive vs v1 vs v2 on dev + held-out -> results/report.md
+python -m quietgate.diagnose            # every v2 failure on the held-out set -> results/holdout/failures_quietgate_v2.md
 python app.py --port 6060               # review page
-python -m quietgate.cli live            # live microphone demo (use headphones)
+python -m quietgate.cli live            # live microphone demo with v2 (use headphones)
 ```
 
 ## The review page (`app.py`)
 
 | Tab | What it shows |
 |---|---|
-| 1. Results | The before/after table (from `results/report.md`) |
-| 2. Listen to a test scene | Timeline of who spoke, the calls and stops, and when each gate let the assistant talk. Two audio players (before / after) with the reply mixed in. |
-| 3. Try your own audio | Upload a WAV/FLAC/OGG/MP3 (any sample rate, mono or stereo, max 3 min); both gates run on it. Takes about 25 s per minute of audio. |
+| 1. Results | The before/after tables (from `results/report.md`) |
+| 2. Listen to a test scene | Any held-out or dev meeting: timeline of who spoke, calls, stops, and when naive / v1 / v2 talked. Two players (naive vs v2) with the reply mixed in. |
+| 3. Try your own audio | Upload a WAV/FLAC/OGG/MP3 (any sample rate, mono or stereo, max 3 min); naive and v2 run on it. About 25 s per minute of audio. |
 | 4. Raw files | Source + results zip, test-audio zip, and the individual documents |
-| 5. Docs | evidence.md, intent.md, README |
+| 5. Docs | evidence.md, intent.md, directive.md, README |
 
 **Hosting on a server:** `run_project.bat` (or `python app.py --host 0.0.0.0 --port 6060`), open TCP 6060 in the
-firewall, and send the client `http://<server-ip>:6060`. **Do not use port 6000:** Chrome, Edge and Firefox
-refuse to open it (`ERR_UNSAFE_PORT`; the same applies to 6665-6669, 6697 and 10080). The page needs no microphone, so plain HTTP works. The live microphone demo
-is a terminal program (`quietgate.cli live`) and runs on the presenter's laptop.
+firewall, and send the client `http://<server-ip>:6060`. **Do not use port 6000:** Chrome, Edge and Firefox refuse to
+open it (`ERR_UNSAFE_PORT`; the same applies to 6665-6669, 6697 and 10080). The page needs no microphone, so plain HTTP
+works. The live microphone demo is a terminal program and runs on the presenter's laptop.
 
 ## Project layout
 
 ```
-config/default.yaml        every threshold and timing (single source of truth)
+config/default.yaml        v2: every threshold and timing (single source of truth)
+config/v1.yaml             v1, frozen, for the comparison
+config/ko_vocab.txt        general Korean vocabulary for the v2 Vosk grammar
 quietgate/gate.py          TurnGate (QuietGate) + NaiveGate (baseline) + simulator - pure logic
-quietgate/detectors.py     wrappers around Silero VAD, openWakeWord, Vosk
-quietgate/metrics.py       acceptance-test metrics - pure functions
-quietgate/scenarios.py     synthetic meeting generator + ground-truth labels
-quietgate/run_eval.py      runs all gates on all scenes, writes results/
+quietgate/detectors.py     wrappers around Silero VAD, openWakeWord, Vosk + the word rules
+quietgate/metrics.py       acceptance-test metrics + diagnostics - pure functions
+quietgate/scenarios.py     dev meeting generator (seed 42)
+quietgate/holdout.py       held-out meeting generator (seed 2026, new sentences)
+quietgate/run_eval.py      runs naive / v1 / v2 on both sets, writes results/
 quietgate/diagnose.py      explains each failure
 quietgate/live.py          microphone demo
 quietgate/cli.py           command line
 app.py                     Gradio review page
-tests/                     unit tests
-data/labels.json           ground truth (data/scenes/*.flac = the test audio)
-results/                   report.md, metrics.json, timelines.json, failures_*.md, events/*.jsonl
-intent.md evidence.md directive.md   Quest documents
+tests/                     17 tests
+data/, data/holdout/       test audio (scenes/*.flac) + ground truth (labels.json)
+results/                   report.md, v2_freeze.txt, dev/ and holdout/ (metrics, timelines, failures, events)
+intent.md evidence.md directive.md loom_script.md   Quest documents
 ```
 
 ## Data and safety
 
 - All speech is synthetic (Microsoft edge-tts neural voices). No person was recorded.
-- No API keys, no cloud APIs at run time. edge-tts is only used once to build the test data.
-- Uploaded files on the review page are processed in memory and not stored by the app (Gradio keeps a
-  temporary copy in its cache folder).
+- No API keys, no cloud APIs at run time; edge-tts is used only to build the test data. Gradio usage analytics are off.
+- Uploaded files on the review page are processed in memory and not stored by the app (Gradio keeps a temporary
+  copy in its cache folder).

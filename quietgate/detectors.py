@@ -52,21 +52,31 @@ class WakeDetector:
 class _TokenCounter:
     """Counts matching tokens in a growing Vosk partial result, so each spoken word fires once.
 
-    reject_next: if the word is followed by a token starting with one of these prefixes it does not
-    count. Used for the Korean honorific 씨: "자비스 씨가 ..." talks ABOUT someone called Jarvis, while
-    "헤이 자비스, ..." / "자비스야" CALLS the assistant. With reject_next set, a match that is the last
-    token of a partial result waits for the next token (or the end of the utterance) before firing.
+    Optional rules (all off by default):
+    reject_next  (v1) skip a match followed by a token with one of these prefixes. Korean honorific 씨:
+                 "자비스 씨가 ..." talks ABOUT someone; "헤이 자비스, ..." CALLS the assistant. A match that is
+                 the last token of a partial waits for the next token (or the end of the utterance).
+    require_prev (v2) the match only counts right after this exact token: the call form "헤이 자비스".
+    max_index    (v2) the match only counts as one of the first max_index+1 words of the utterance.
+                 Commands are short ("stop", "okay stop", "그만", "잠깐 그만"); a stop-like word at the
+                 end of a long sentence ("... 먼저 멈춰", "we should stop spending") is ordinary talk.
     """
 
-    def __init__(self, prefixes, reject_next=()):
+    def __init__(self, prefixes, reject_next=(), require_prev=None, max_index=None):
         self.prefixes = tuple(prefixes)
-        self.reject_next = tuple(reject_next)
+        self.reject_next = tuple(reject_next or ())
+        self.require_prev = require_prev
+        self.max_index = max_index
         self.seen = 0
 
     def _count(self, toks, final):
         n = 0
         for i, tok in enumerate(toks):
             if not tok.startswith(self.prefixes):
+                continue
+            if self.max_index is not None and i > self.max_index:
+                continue
+            if self.require_prev is not None and (i == 0 or toks[i - 1] != self.require_prev):
                 continue
             if self.reject_next:
                 if i + 1 < len(toks):
@@ -82,6 +92,16 @@ class _TokenCounter:
         fired = n > self.seen
         self.seen = 0 if final else max(self.seen, n)
         return fired
+
+
+def load_vocab(path):
+    """Read config/ko_vocab.txt: whitespace-separated words, '#' starts a comment."""
+    full = path if os.path.isabs(path) else str(ROOT / path)
+    words = []
+    with open(full, encoding="utf-8") as f:
+        for line in f:
+            words += line.split("#", 1)[0].split()
+    return list(dict.fromkeys(words))
 
 
 _VOSK_MODELS = {}
@@ -102,13 +122,21 @@ class WordDetector:
     def __init__(self, cfg, sample_rate=16000):
         from vosk import KaldiRecognizer, SetLogLevel
         SetLogLevel(-1)
-        st = cfg["stop"]
+        st, wk = cfg["stop"], cfg["wake"]
+        max_index = st.get("max_index")
         self.en = KaldiRecognizer(_vosk_model(st["model_en"]), sample_rate,
                                   json.dumps(list(st["words_en"]) + ["[unk]"]))
-        self.ko = KaldiRecognizer(_vosk_model(st["model_ko"]), sample_rate)
-        self.en_stop = _TokenCounter(st["words_en"])
-        self.ko_stop = _TokenCounter(st["words_ko"])
-        self.ko_wake = _TokenCounter(cfg["wake"]["words_ko"], cfg["wake"].get("ko_reject_next", ()))
+        if st.get("ko_mode", "free") == "grammar":
+            # v2: Korean keywords + a general vocabulary as the "everything else" path
+            # (the small KO model has no [unk] token, so the vocabulary plays that role).
+            words = list(st["ko_keywords"]) + [w for w in load_vocab(st["ko_vocab"]) if w not in st["ko_keywords"]]
+            self.ko = KaldiRecognizer(_vosk_model(st["model_ko"]), sample_rate, json.dumps(words, ensure_ascii=False))
+        else:
+            self.ko = KaldiRecognizer(_vosk_model(st["model_ko"]), sample_rate)
+        self.en_stop = _TokenCounter(st["words_en"], max_index=max_index)
+        self.ko_stop = _TokenCounter(st["words_ko"], max_index=max_index)
+        self.ko_wake = _TokenCounter(wk["words_ko"], reject_next=wk.get("ko_reject_next", ()),
+                                     require_prev=wk.get("ko_require_prev"))
 
     @staticmethod
     def _feed(rec, data):
