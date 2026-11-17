@@ -1,0 +1,40 @@
+# ---- Python environment and caches ----
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Downloaded models (about 330 MB; re-download with: python -m quietgate.cli fetch-models) ----
+models/
+
+# ---- Generated / cached data ----
+# Raw TTS clips and cached detector outputs are rebuilt by make-data / eval.
+data/tts_cache/
+data/signals/
+# Zips and copies built by app.py at start-up.
+dist/
+# Gradio runtime folders.
+.gradio/
+flagged/
+
+# KEEP (tracked on purpose):
+#   data/labels.json   ground truth
+#   data/scenes/*.flac the exact test audio (about 29 MB). edge-tts output can drift slightly, so these
+#                      files are what make the reported numbers exactly reproducible.
+#   results/           the evidence: report.md, metrics.json, timelines.json, failures_*.md, events/
+
+# ---- Logs, secrets, editor and OS files ----
+*.log
+.env
+.env.*
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,5590 @@
+{
+ "seed": 42,
+ "sample_rate": 16000,
+ "reply_s": 8.14,
+ "reply_text": "Here is the agenda. First, the budget review. Second, the launch timeline. Third, hiring for the Seoul office.",
+ "scenes": [
+  {
+   "id": "scene_00",
+   "kind": "no_call",
+   "duration": 66.213,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -11.6
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -10.9
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -9.2
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -4.8
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -5.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.34,
+     "S5",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     4.17,
+     6.52,
+     "S1",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     7.449,
+     9.469,
+     "S4",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     10.63,
+     12.35,
+     "S3",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     11.599,
+     13.379,
+     "S4",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     14.335,
+     15.825,
+     "S1",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     16.196,
+     18.266,
+     "S4",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     19.363,
+     21.813,
+     "S3",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     22.154,
+     24.534,
+     "S2",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     25.604,
+     28.114,
+     "S1",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     28.986,
+     31.056,
+     "S4",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     31.545,
+     33.995,
+     "S3",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     34.843,
+     37.323,
+     "S2",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     37.77,
+     40.14,
+     "S5",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     41.056,
+     43.316,
+     "S1",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     44.341,
+     46.621,
+     "S5",
+     "en",
+     "We should stop spending so much on paid ads."
+    ],
+    [
+     47.743,
+     50.953,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     51.609,
+     53.529,
+     "S5",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     52.852,
+     55.342,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     56.45,
+     58.37,
+     "S5",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     59.129,
+     61.449,
+     "S1",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     61.886,
+     64.376,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "tune"
+  },
+  {
+   "id": "scene_01",
+   "kind": "call",
+   "duration": 56.59,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -3.8
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -5.6
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -8.8
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -4.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.49,
+     "S3",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     4.247,
+     6.277,
+     "S1",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     7.334,
+     9.324,
+     "S4",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     9.961,
+     11.971,
+     "S1",
+     "en",
+     "Let's look at the budget numbers for next quarter."
+    ],
+    [
+     12.81,
+     15.41,
+     "S3",
+     "ko",
+     "Hey Jarvis, 오늘 안건이 뭐야?"
+    ],
+    [
+     25.45,
+     27.48,
+     "S1",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     27.995,
+     30.685,
+     "S2",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     31.063,
+     33.663,
+     "S3",
+     "ko",
+     "Hey Jarvis, 오늘 안건이 뭐야?"
+    ],
+    [
+     43.703,
+     45.693,
+     "S4",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     46.586,
+     48.716,
+     "S3",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     49.802,
+     51.822,
+     "S2",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     52.801,
+     54.931,
+     "S4",
+     "en",
+     "The Seoul office will join the call at three."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 12.81,
+     "end": 15.41,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "Hey Jarvis, 오늘 안건이 뭐야?"
+    },
+    {
+     "start": 31.063,
+     "end": 33.663,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "Hey Jarvis, 오늘 안건이 뭐야?"
+    }
+   ],
+   "stops": [],
+   "split": "tune"
+  },
+  {
+   "id": "scene_02",
+   "kind": "call_stop",
+   "duration": 53.481,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -4.9
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -11.9
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -3.5
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -11.3
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -11.2
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.44,
+     "S4",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     4.391,
+     7.141,
+     "S5",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     8.168,
+     11.358,
+     "S2",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     10.773,
+     13.033,
+     "S5",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     13.939,
+     16.109,
+     "S1",
+     "en",
+     "Hey Jarvis, what is on the agenda today?"
+    ],
+    [
+     19.018,
+     19.588,
+     "S4",
+     "ko",
+     "그만해."
+    ],
+    [
+     21.088,
+     23.398,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     24.181,
+     26.361,
+     "S3",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     27.077,
+     29.567,
+     "S1",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     29.913,
+     32.223,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     32.673,
+     35.203,
+     "S5",
+     "en",
+     "Hey Jarvis, summarize the decisions so far."
+    ],
+    [
+     38.956,
+     39.646,
+     "S2",
+     "ko",
+     "멈춰."
+    ],
+    [
+     41.146,
+     43.626,
+     "S2",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     44.165,
+     46.915,
+     "S5",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     47.354,
+     49.054,
+     "S3",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     49.875,
+     52.135,
+     "S1",
+     "en",
+     "I think the launch date should move by one week."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 13.939,
+     "end": 16.109,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Hey Jarvis, what is on the agenda today?"
+    },
+    {
+     "start": 32.673,
+     "end": 35.203,
+     "lang": "en",
+     "speaker": "S5",
+     "text": "Hey Jarvis, summarize the decisions so far."
+    }
+   ],
+   "stops": [
+    {
+     "start": 19.018,
+     "end": 19.588,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "그만해."
+    },
+    {
+     "start": 38.956,
+     "end": 39.646,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "멈춰."
+    }
+   ],
+   "split": "tune"
+  },
+  {
+   "id": "scene_03",
+   "kind": "no_call",
+   "duration": 61.804,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -3.9
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -9.2
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -10.6
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -1.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.94,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     3.832,
+     6.132,
+     "S4",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     6.615,
+     9.275,
+     "S3",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     9.932,
+     12.432,
+     "S4",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     13.016,
+     15.086,
+     "S1",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     14.785,
+     17.095,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     16.548,
+     19.238,
+     "S1",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     20.33,
+     23.44,
+     "S3",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     24.49,
+     27.37,
+     "S4",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     28.146,
+     30.276,
+     "S3",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     31.415,
+     34.005,
+     "S1",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     34.543,
+     37.233,
+     "S2",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     37.778,
+     39.848,
+     "S4",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     40.331,
+     43.541,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     44.067,
+     46.207,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     45.822,
+     48.512,
+     "S2",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     48.03,
+     51.14,
+     "S3",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     51.937,
+     54.797,
+     "S2",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     55.165,
+     57.095,
+     "S4",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     57.427,
+     60.117,
+     "S2",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "tune"
+  },
+  {
+   "id": "scene_04",
+   "kind": "call",
+   "duration": 75.235,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -4.0
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -7.8
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -5.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.44,
+     "S1",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     4.533,
+     6.463,
+     "S2",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     7.467,
+     9.947,
+     "S3",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     10.488,
+     12.268,
+     "S1",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     13.34,
+     15.93,
+     "S2",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     16.545,
+     19.425,
+     "S1",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     19.899,
+     22.279,
+     "S3",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     23.449,
+     25.469,
+     "S2",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     26.129,
+     28.629,
+     "S3",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     29.718,
+     31.898,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     32.232,
+     34.212,
+     "S3",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     34.905,
+     36.975,
+     "S1",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     37.446,
+     39.146,
+     "S2",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     39.914,
+     42.824,
+     "S1",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     43.978,
+     46.478,
+     "S3",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     47.426,
+     50.206,
+     "S2",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     50.874,
+     53.214,
+     "S3",
+     "en",
+     "Hey Jarvis, how much time do we have left?"
+    ],
+    [
+     63.254,
+     65.134,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     65.812,
+     68.192,
+     "S3",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     69.046,
+     70.746,
+     "S2",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     71.319,
+     73.389,
+     "S1",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 50.874,
+     "end": 53.214,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, how much time do we have left?"
+    }
+   ],
+   "stops": [],
+   "split": "tune"
+  },
+  {
+   "id": "scene_05",
+   "kind": "call_stop",
+   "duration": 55.045,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -4.1
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -8.6
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -4.0
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -4.6
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.47,
+     "S2",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     2.792,
+     5.242,
+     "S1",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     5.952,
+     8.552,
+     "S4",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     9.479,
+     11.149,
+     "S2",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     12.039,
+     14.529,
+     "S1",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     15.53,
+     18.04,
+     "S2",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     18.385,
+     20.875,
+     "S1",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     21.586,
+     23.716,
+     "S3",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     24.552,
+     27.022,
+     "S2",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     28.069,
+     30.709,
+     "S4",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     31.678,
+     34.208,
+     "S2",
+     "en",
+     "Hey Jarvis, summarize the decisions so far."
+    ],
+    [
+     37.868,
+     38.338,
+     "S3",
+     "ko",
+     "그만."
+    ],
+    [
+     39.838,
+     41.968,
+     "S3",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     42.704,
+     45.154,
+     "S1",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     46.096,
+     48.116,
+     "S2",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     49.22,
+     51.37,
+     "S1",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     50.762,
+     53.372,
+     "S2",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 31.678,
+     "end": 34.208,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Hey Jarvis, summarize the decisions so far."
+    }
+   ],
+   "stops": [
+    {
+     "start": 37.868,
+     "end": 38.338,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "그만."
+    }
+   ],
+   "split": "tune"
+  },
+  {
+   "id": "scene_06",
+   "kind": "no_call",
+   "duration": 61.372,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -1.7
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -2.8
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -7.4
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -11.9
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.28,
+     "S4",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     4.064,
+     6.134,
+     "S3",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     7.242,
+     9.712,
+     "S2",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     10.45,
+     13.23,
+     "S3",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     14.248,
+     16.898,
+     "S4",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     18.025,
+     20.165,
+     "S3",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     20.998,
+     24.188,
+     "S4",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     23.602,
+     26.342,
+     "S2",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     26.984,
+     29.054,
+     "S1",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     30.039,
+     32.179,
+     "S3",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     32.706,
+     35.306,
+     "S1",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     36.091,
+     38.781,
+     "S3",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     39.784,
+     41.924,
+     "S4",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     41.599,
+     43.669,
+     "S1",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     44.106,
+     46.426,
+     "S2",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     47.234,
+     49.534,
+     "S1",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     50.524,
+     52.844,
+     "S2",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     53.844,
+     56.754,
+     "S1",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     57.575,
+     59.715,
+     "S3",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "tune"
+  },
+  {
+   "id": "scene_07",
+   "kind": "call",
+   "duration": 78.246,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -7.8
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -6.9
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -7.6
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -5.9
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -7.9
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.22,
+     "S4",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     3.679,
+     6.889,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     7.607,
+     9.977,
+     "S4",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     11.025,
+     13.825,
+     "S1",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     14.344,
+     17.124,
+     "S5",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     17.765,
+     19.745,
+     "S1",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     20.209,
+     22.769,
+     "S3",
+     "en",
+     "Hey Jarvis, summarize the decisions so far."
+    ],
+    [
+     32.809,
+     35.599,
+     "S4",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     36.399,
+     39.049,
+     "S2",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     38.452,
+     41.662,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     42.366,
+     44.646,
+     "S1",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     44.048,
+     45.838,
+     "S3",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     46.564,
+     48.604,
+     "S4",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     49.22,
+     51.4,
+     "S5",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     51.908,
+     54.558,
+     "S2",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     55.34,
+     57.51,
+     "S3",
+     "en",
+     "Hey Jarvis, what is on the agenda today?"
+    ],
+    [
+     67.55,
+     70.08,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     71.032,
+     73.312,
+     "S4",
+     "en",
+     "We should stop spending so much on paid ads."
+    ],
+    [
+     73.879,
+     76.309,
+     "S3",
+     "en",
+     "Let's look at the budget numbers for next quarter."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 20.209,
+     "end": 22.769,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, summarize the decisions so far."
+    },
+    {
+     "start": 55.34,
+     "end": 57.51,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, what is on the agenda today?"
+    }
+   ],
+   "stops": [],
+   "split": "tune"
+  },
+  {
+   "id": "scene_08",
+   "kind": "call_stop",
+   "duration": 51.897,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -4.3
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -3.0
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -10.8
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.1,
+     "S1",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     4.247,
+     6.937,
+     "S3",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     6.337,
+     9.217,
+     "S1",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     9.566,
+     11.746,
+     "S2",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     12.122,
+     14.332,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     13.835,
+     15.515,
+     "S2",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     16.221,
+     18.291,
+     "S3",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     19.482,
+     21.592,
+     "S2",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     22.441,
+     24.741,
+     "S1",
+     "ko",
+     "헤이 자비스, 오늘 안건이 뭐야?"
+    ],
+    [
+     27.538,
+     27.898,
+     "S3",
+     "ko",
+     "그만."
+    ],
+    [
+     29.398,
+     31.618,
+     "S2",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     32.414,
+     34.914,
+     "S1",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     34.459,
+     36.339,
+     "S3",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     36.898,
+     39.438,
+     "S2",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     39.802,
+     42.262,
+     "S1",
+     "ko",
+     "헤이 자비스, 남은 시간이 얼마야?"
+    ],
+    [
+     45.654,
+     46.144,
+     "S3",
+     "ko",
+     "그만해."
+    ],
+    [
+     47.644,
+     50.014,
+     "S2",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ]
+   ],
+   "calls": [
+    {
+     "start": 22.441,
+     "end": 24.741,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "헤이 자비스, 오늘 안건이 뭐야?"
+    },
+    {
+     "start": 39.802,
+     "end": 42.262,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "헤이 자비스, 남은 시간이 얼마야?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 27.538,
+     "end": 27.898,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "그만."
+    },
+    {
+     "start": 45.654,
+     "end": 46.144,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "그만해."
+    }
+   ],
+   "split": "tune"
+  },
+  {
+   "id": "scene_09",
+   "kind": "no_call",
+   "duration": 70.058,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -6.4
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -8.4
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -7.2
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -8.7
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.06,
+     "S4",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     2.705,
+     5.365,
+     "S3",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     5.688,
+     7.758,
+     "S1",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     8.586,
+     11.376,
+     "S2",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     12.195,
+     14.975,
+     "S1",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     15.673,
+     18.163,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     19.034,
+     22.034,
+     "S2",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     22.648,
+     25.138,
+     "S3",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     26.209,
+     29.209,
+     "S2",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     29.769,
+     32.029,
+     "S3",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     32.738,
+     35.178,
+     "S2",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     36.351,
+     38.781,
+     "S3",
+     "en",
+     "Let's look at the budget numbers for next quarter."
+    ],
+    [
+     39.673,
+     41.933,
+     "S4",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     42.402,
+     45.402,
+     "S2",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     46.265,
+     48.285,
+     "S1",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     48.703,
+     51.913,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     52.322,
+     54.412,
+     "S4",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     55.351,
+     57.771,
+     "S2",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     58.155,
+     60.845,
+     "S1",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     61.728,
+     63.908,
+     "S2",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     64.666,
+     67.876,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "tune"
+  },
+  {
+   "id": "scene_10",
+   "kind": "call",
+   "duration": 66.03,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -1.6
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -8.7
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -2.5
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.87,
+     "S2",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     4.069,
+     7.179,
+     "S3",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     7.964,
+     9.984,
+     "S2",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     10.623,
+     12.773,
+     "S3",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     13.588,
+     15.798,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     16.137,
+     17.857,
+     "S3",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     18.505,
+     20.285,
+     "S1",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     20.698,
+     22.868,
+     "S3",
+     "en",
+     "Hey Jarvis, what is on the agenda today?"
+    ],
+    [
+     32.908,
+     35.498,
+     "S2",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     34.706,
+     37.586,
+     "S1",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     38.759,
+     40.939,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     41.544,
+     43.854,
+     "S3",
+     "en",
+     "Hey Jarvis, how much time do we have left?"
+    ],
+    [
+     53.894,
+     56.774,
+     "S1",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     57.847,
+     61.057,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     62.142,
+     64.162,
+     "S1",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 20.698,
+     "end": 22.868,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, what is on the agenda today?"
+    },
+    {
+     "start": 41.544,
+     "end": 43.854,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, how much time do we have left?"
+    }
+   ],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_11",
+   "kind": "call_stop",
+   "duration": 61.048,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -3.7
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -1.2
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -11.4
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -2.4
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.02,
+     "S4",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     3.473,
+     5.193,
+     "S1",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     6.051,
+     8.421,
+     "S2",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     8.85,
+     11.36,
+     "S3",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     11.889,
+     14.999,
+     "S1",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     16.11,
+     18.58,
+     "S4",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     19.278,
+     21.808,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     22.683,
+     24.793,
+     "S3",
+     "en",
+     "Hey Jarvis, how much time do we have left?"
+    ],
+    [
+     28.461,
+     29.011,
+     "S3",
+     "en",
+     "Okay, stop."
+    ],
+    [
+     30.511,
+     33.721,
+     "S1",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     34.117,
+     36.147,
+     "S3",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     37.34,
+     40.53,
+     "S2",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     39.928,
+     42.238,
+     "S1",
+     "en",
+     "Hey Jarvis, how much time do we have left?"
+    ],
+    [
+     45.888,
+     46.618,
+     "S1",
+     "en",
+     "Okay, stop."
+    ],
+    [
+     48.118,
+     50.208,
+     "S3",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     51.054,
+     53.364,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     54.223,
+     56.143,
+     "S4",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     57.008,
+     59.038,
+     "S3",
+     "en",
+     "The Seoul office will join the call at three."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 22.683,
+     "end": 24.793,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, how much time do we have left?"
+    },
+    {
+     "start": 39.928,
+     "end": 42.238,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Hey Jarvis, how much time do we have left?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 28.461,
+     "end": 29.011,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Okay, stop."
+    },
+    {
+     "start": 45.888,
+     "end": 46.618,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Okay, stop."
+    }
+   ],
+   "split": "test"
+  },
+  {
+   "id": "scene_12",
+   "kind": "no_call",
+   "duration": 70.394,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -9.9
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -10.4
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -5.5
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.1,
+     "S3",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     4.147,
+     6.737,
+     "S2",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     7.908,
+     9.978,
+     "S3",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     11.002,
+     13.592,
+     "S2",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     14.571,
+     16.051,
+     "S1",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     17.221,
+     19.431,
+     "S3",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     18.638,
+     21.478,
+     "S1",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     22.304,
+     24.324,
+     "S3",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     23.76,
+     25.64,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     26.523,
+     28.823,
+     "S3",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     29.707,
+     31.967,
+     "S1",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     31.319,
+     33.339,
+     "S3",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     32.983,
+     34.653,
+     "S1",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     35.556,
+     38.156,
+     "S3",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     38.595,
+     41.185,
+     "S2",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     42.04,
+     44.11,
+     "S3",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     43.418,
+     45.348,
+     "S2",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     45.738,
+     48.618,
+     "S3",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     49.24,
+     51.93,
+     "S2",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     53.085,
+     55.105,
+     "S3",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     54.625,
+     56.605,
+     "S1",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     55.927,
+     57.807,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     58.169,
+     60.449,
+     "S1",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     61.045,
+     63.115,
+     "S2",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     63.417,
+     66.257,
+     "S1",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     67.276,
+     68.976,
+     "S2",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_13",
+   "kind": "call",
+   "duration": 76.591,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -3.1
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -5.7
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -3.1
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -6.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.58,
+     "S2",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     3.535,
+     6.075,
+     "S4",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     6.954,
+     9.964,
+     "S1",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     9.587,
+     12.797,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     13.738,
+     16.648,
+     "S2",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     16.009,
+     18.969,
+     "S1",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     18.482,
+     20.522,
+     "S4",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     21.164,
+     24.274,
+     "S3",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     25.029,
+     27.629,
+     "S2",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     26.887,
+     29.167,
+     "S4",
+     "en",
+     "We should stop spending so much on paid ads."
+    ],
+    [
+     29.854,
+     32.664,
+     "S1",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     33.322,
+     35.742,
+     "S4",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     35.099,
+     37.559,
+     "S2",
+     "ko",
+     "헤이 자비스, 남은 시간이 얼마야?"
+    ],
+    [
+     47.599,
+     50.609,
+     "S1",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     50.969,
+     53.879,
+     "S2",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     53.451,
+     55.711,
+     "S3",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     56.539,
+     58.979,
+     "S4",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     59.649,
+     62.139,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     63.22,
+     65.4,
+     "S4",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     64.9,
+     66.83,
+     "S2",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     66.137,
+     68.577,
+     "S4",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     69.192,
+     71.852,
+     "S3",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     72.669,
+     74.739,
+     "S2",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 35.099,
+     "end": 37.559,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "헤이 자비스, 남은 시간이 얼마야?"
+    }
+   ],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_14",
+   "kind": "call_stop",
+   "duration": 73.853,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -9.8
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -10.3
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -4.1
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -11.2
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -3.1
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.91,
+     "S2",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     4.517,
+     6.447,
+     "S4",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     7.446,
+     9.116,
+     "S1",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     9.558,
+     12.218,
+     "S2",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     12.916,
+     15.456,
+     "S5",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     16.129,
+     18.619,
+     "S2",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     19.23,
+     21.98,
+     "S1",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     22.754,
+     24.894,
+     "S4",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     24.586,
+     26.616,
+     "S1",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     26.289,
+     28.519,
+     "S3",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     29.114,
+     31.584,
+     "S1",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     32.042,
+     34.412,
+     "S5",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     35.163,
+     37.433,
+     "S3",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     36.851,
+     38.891,
+     "S5",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     39.709,
+     41.849,
+     "S4",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     42.41,
+     44.45,
+     "S5",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     43.735,
+     46.515,
+     "S4",
+     "ko",
+     "헤이 자비스, 남은 시간이 얼마야?"
+    ],
+    [
+     50.182,
+     50.732,
+     "S1",
+     "en",
+     "Okay, stop."
+    ],
+    [
+     52.232,
+     53.952,
+     "S2",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     54.724,
+     56.764,
+     "S5",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     57.263,
+     59.753,
+     "S2",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     59.218,
+     61.008,
+     "S3",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     61.624,
+     63.614,
+     "S2",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     64.145,
+     66.525,
+     "S3",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     66.984,
+     69.524,
+     "S5",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     70.437,
+     72.417,
+     "S3",
+     "en",
+     "Let me check the numbers and get back to you."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 43.735,
+     "end": 46.515,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 남은 시간이 얼마야?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 50.182,
+     "end": 50.732,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Okay, stop."
+    }
+   ],
+   "split": "test"
+  },
+  {
+   "id": "scene_15",
+   "kind": "no_call",
+   "duration": 51.117,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -7.8
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -11.1
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -6.5
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.41,
+     "S2",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     4.29,
+     6.31,
+     "S1",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     6.956,
+     9.106,
+     "S2",
+     "en",
+     "We should stop spending so much on paid ads."
+    ],
+    [
+     9.696,
+     11.836,
+     "S3",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     12.541,
+     15.151,
+     "S2",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     15.905,
+     18.315,
+     "S1",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     17.734,
+     20.104,
+     "S3",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     20.547,
+     22.037,
+     "S2",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     22.705,
+     24.845,
+     "S3",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     25.855,
+     28.175,
+     "S2",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     27.654,
+     30.304,
+     "S3",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     31.371,
+     33.441,
+     "S1",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     34.338,
+     37.528,
+     "S3",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     38.456,
+     41.066,
+     "S2",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     40.421,
+     42.681,
+     "S3",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     43.713,
+     45.853,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     46.611,
+     48.961,
+     "S2",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_16",
+   "kind": "call",
+   "duration": 69.004,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -5.9
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -5.5
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -3.1
+    },
+    {
+     "id": "S4",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -5.7
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.45,
+     "S2",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     4.444,
+     6.224,
+     "S1",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     6.894,
+     9.694,
+     "S4",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     10.543,
+     12.693,
+     "S3",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     13.474,
+     16.124,
+     "S2",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     17.237,
+     19.307,
+     "S1",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     20.493,
+     22.213,
+     "S3",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     22.966,
+     25.276,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     26.297,
+     28.077,
+     "S1",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     28.954,
+     31.444,
+     "S3",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     32.385,
+     34.395,
+     "S4",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     34.77,
+     37.23,
+     "S1",
+     "ko",
+     "헤이 자비스, 남은 시간이 얼마야?"
+    ],
+    [
+     47.27,
+     49.26,
+     "S3",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     50.308,
+     52.328,
+     "S1",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     53.363,
+     55.853,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     56.201,
+     57.681,
+     "S4",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     58.876,
+     61.136,
+     "S2",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     62.274,
+     64.004,
+     "S4",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     64.428,
+     67.078,
+     "S2",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 34.77,
+     "end": 37.23,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "헤이 자비스, 남은 시간이 얼마야?"
+    }
+   ],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_17",
+   "kind": "call_stop",
+   "duration": 67.975,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -8.9
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -2.0
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -5.4
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.82,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     2.23,
+     4.98,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     4.478,
+     6.848,
+     "S1",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     7.366,
+     9.146,
+     "S2",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     9.999,
+     12.689,
+     "S1",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     13.587,
+     15.657,
+     "S2",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     16.018,
+     18.668,
+     "S1",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     19.007,
+     21.537,
+     "S3",
+     "en",
+     "Hey Jarvis, summarize the decisions so far."
+    ],
+    [
+     23.962,
+     24.532,
+     "S2",
+     "ko",
+     "그만해."
+    ],
+    [
+     26.032,
+     28.682,
+     "S1",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     29.573,
+     32.173,
+     "S2",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     33.154,
+     35.284,
+     "S1",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     34.653,
+     37.533,
+     "S2",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     38.252,
+     40.362,
+     "S3",
+     "en",
+     "Hey Jarvis, how much time do we have left?"
+    ],
+    [
+     42.856,
+     43.326,
+     "S1",
+     "ko",
+     "그만."
+    ],
+    [
+     44.826,
+     46.846,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     46.068,
+     48.328,
+     "S1",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     49.468,
+     52.218,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     52.746,
+     54.886,
+     "S1",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     55.965,
+     57.345,
+     "S3",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     58.039,
+     60.249,
+     "S2",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     60.854,
+     63.504,
+     "S1",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     64.134,
+     66.604,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 19.007,
+     "end": 21.537,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, summarize the decisions so far."
+    },
+    {
+     "start": 38.252,
+     "end": 40.362,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Hey Jarvis, how much time do we have left?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 23.962,
+     "end": 24.532,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "그만해."
+    },
+    {
+     "start": 42.856,
+     "end": 43.326,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "그만."
+    }
+   ],
+   "split": "test"
+  },
+  {
+   "id": "scene_18",
+   "kind": "no_call",
+   "duration": 69.301,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -4.8
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -6.9
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -3.7
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -7.8
+    },
+    {
+     "id": "S5",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -11.5
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.49,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     4.037,
+     5.757,
+     "S1",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     5.139,
+     7.049,
+     "S3",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     8.113,
+     10.323,
+     "S5",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     9.641,
+     11.911,
+     "S3",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     12.755,
+     14.425,
+     "S5",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     15.125,
+     16.915,
+     "S1",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     17.573,
+     20.433,
+     "S4",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     20.756,
+     22.966,
+     "S2",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     24.088,
+     26.748,
+     "S1",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     27.682,
+     29.912,
+     "S3",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     30.837,
+     32.567,
+     "S5",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     33.634,
+     36.284,
+     "S4",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     36.985,
+     38.975,
+     "S1",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     39.876,
+     42.176,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     43.278,
+     45.658,
+     "S3",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     46.672,
+     48.692,
+     "S2",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     48.288,
+     50.598,
+     "S3",
+     "en",
+     "Let's look at the budget numbers for next quarter."
+    ],
+    [
+     51.223,
+     53.353,
+     "S4",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     53.77,
+     55.49,
+     "S1",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     55.19,
+     57.77,
+     "S5",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     58.811,
+     60.801,
+     "S1",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     60.322,
+     61.992,
+     "S5",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     62.407,
+     65.047,
+     "S2",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     65.737,
+     67.727,
+     "S1",
+     "en",
+     "Can you share the slides after the meeting?"
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_19",
+   "kind": "call",
+   "duration": 68.547,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -9.6
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -0.5
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -8.7
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.17,
+     "S1",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     3.609,
+     5.869,
+     "S3",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     6.911,
+     10.101,
+     "S1",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     9.687,
+     12.267,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     13.123,
+     16.313,
+     "S1",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     17.104,
+     18.584,
+     "S3",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     19.152,
+     21.842,
+     "S1",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     22.538,
+     24.518,
+     "S3",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     25.364,
+     27.294,
+     "S2",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     28.254,
+     29.984,
+     "S3",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     30.969,
+     34.609,
+     "S1",
+     "ko",
+     "Hey Jarvis, 지금까지 결정 사항 정리해 줘."
+    ],
+    [
+     44.649,
+     46.829,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     47.534,
+     50.064,
+     "S1",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     49.736,
+     51.876,
+     "S3",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     52.908,
+     55.498,
+     "S2",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     56.247,
+     58.257,
+     "S3",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     59.005,
+     61.135,
+     "S1",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     61.846,
+     63.776,
+     "S2",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     64.12,
+     66.99,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 30.969,
+     "end": 34.609,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "Hey Jarvis, 지금까지 결정 사항 정리해 줘."
+    }
+   ],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_20",
+   "kind": "call_stop",
+   "duration": 63.846,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -2.8
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -7.6
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -7.2
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.6,
+     "S2",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     3.182,
+     5.252,
+     "S3",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     6.165,
+     8.485,
+     "S1",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     7.882,
+     9.812,
+     "S3",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     10.791,
+     12.281,
+     "S1",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     13.031,
+     15.011,
+     "S2",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     14.613,
+     16.633,
+     "S3",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     15.903,
+     17.913,
+     "S2",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     18.747,
+     20.927,
+     "S3",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     21.655,
+     23.975,
+     "S1",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     25.157,
+     27.837,
+     "S3",
+     "ko",
+     "헤이 자비스, 오늘 안건이 뭐야?"
+    ],
+    [
+     30.635,
+     31.115,
+     "S3",
+     "ko",
+     "멈춰."
+    ],
+    [
+     32.615,
+     35.365,
+     "S1",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     35.818,
+     38.598,
+     "S3",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     37.919,
+     40.429,
+     "S1",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     41.012,
+     43.262,
+     "S2",
+     "en",
+     "We should stop spending so much on paid ads."
+    ],
+    [
+     43.931,
+     46.341,
+     "S3",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     47.296,
+     49.316,
+     "S1",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     50.514,
+     52.444,
+     "S3",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     53.605,
+     55.585,
+     "S2",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     56.377,
+     58.257,
+     "S3",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     59.418,
+     61.698,
+     "S2",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ]
+   ],
+   "calls": [
+    {
+     "start": 25.157,
+     "end": 27.837,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "헤이 자비스, 오늘 안건이 뭐야?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 30.635,
+     "end": 31.115,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "멈춰."
+    }
+   ],
+   "split": "test"
+  },
+  {
+   "id": "scene_21",
+   "kind": "no_call",
+   "duration": 60.732,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -8.5
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -5.1
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -5.5
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -1.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.49,
+     "S3",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     4.051,
+     6.661,
+     "S2",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     7.273,
+     9.923,
+     "S3",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     10.654,
+     13.494,
+     "S1",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     14.634,
+     17.324,
+     "S4",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     18.178,
+     20.318,
+     "S3",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     21.221,
+     23.101,
+     "S4",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     23.448,
+     26.198,
+     "S2",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     26.589,
+     28.729,
+     "S1",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     28.132,
+     30.442,
+     "S3",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     31.422,
+     33.682,
+     "S2",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     34.8,
+     37.08,
+     "S1",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     37.861,
+     39.561,
+     "S4",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     40.683,
+     42.823,
+     "S1",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     43.964,
+     45.454,
+     "S2",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     46.463,
+     48.473,
+     "S1",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     49.562,
+     51.882,
+     "S2",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     53.018,
+     56.208,
+     "S3",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     56.997,
+     58.667,
+     "S2",
+     "en",
+     "Can you share the slides after the meeting?"
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_22",
+   "kind": "call",
+   "duration": 67.27,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -3.4
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-GuyNeural",
+     "gain_db": -11.8
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -8.0
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -8.5
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.73,
+     "S4",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     3.325,
+     5.545,
+     "S2",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     6.729,
+     8.609,
+     "S3",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     8.915,
+     11.705,
+     "S2",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     12.863,
+     14.933,
+     "S3",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     15.244,
+     17.264,
+     "S4",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     17.62,
+     19.76,
+     "S1",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     20.425,
+     22.885,
+     "S4",
+     "ko",
+     "헤이 자비스, 남은 시간이 얼마야?"
+    ],
+    [
+     32.925,
+     35.105,
+     "S3",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     34.488,
+     36.218,
+     "S1",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     36.949,
+     39.019,
+     "S3",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     39.655,
+     42.155,
+     "S4",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     43.137,
+     45.017,
+     "S3",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     45.929,
+     48.839,
+     "S4",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     49.612,
+     52.302,
+     "S3",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     53.427,
+     55.677,
+     "S1",
+     "en",
+     "We should stop spending so much on paid ads."
+    ],
+    [
+     55.164,
+     57.704,
+     "S2",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     58.108,
+     60.978,
+     "S1",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     61.36,
+     63.14,
+     "S4",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     63.848,
+     65.918,
+     "S3",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 20.425,
+     "end": 22.885,
+     "lang": "ko",
+     "speaker": "S4",
+     "text": "헤이 자비스, 남은 시간이 얼마야?"
+    }
+   ],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_23",
+   "kind": "call_stop",
+   "duration": 76.14,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -5.1
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -11.5
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -7.9
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -11.2
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.01,
+     "S4",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     2.3,
+     4.95,
+     "S1",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     5.831,
+     7.501,
+     "S3",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     8.205,
+     10.985,
+     "S2",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     12.153,
+     14.223,
+     "S4",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     13.482,
+     15.392,
+     "S3",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     16.347,
+     18.487,
+     "S1",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     19.668,
+     22.358,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     23.136,
+     25.396,
+     "S1",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     25.836,
+     28.246,
+     "S2",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     29.235,
+     31.715,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     32.568,
+     35.258,
+     "S2",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     35.649,
+     38.839,
+     "S1",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     39.772,
+     41.472,
+     "S2",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     42.134,
+     44.274,
+     "S1",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     44.7,
+     46.68,
+     "S3",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     47.5,
+     49.52,
+     "S4",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     50.092,
+     52.222,
+     "S1",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     52.721,
+     55.101,
+     "S3",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     55.964,
+     58.744,
+     "S2",
+     "ko",
+     "헤이 자비스, 남은 시간이 얼마야?"
+    ],
+    [
+     62.556,
+     63.246,
+     "S1",
+     "ko",
+     "멈춰."
+    ],
+    [
+     64.746,
+     66.676,
+     "S4",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     67.263,
+     69.443,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     70.082,
+     72.102,
+     "S4",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     72.673,
+     75.483,
+     "S3",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 55.964,
+     "end": 58.744,
+     "lang": "ko",
+     "speaker": "S2",
+     "text": "헤이 자비스, 남은 시간이 얼마야?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 62.556,
+     "end": 63.246,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "멈춰."
+    }
+   ],
+   "split": "test"
+  },
+  {
+   "id": "scene_24",
+   "kind": "no_call",
+   "duration": 61.504,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -8.0
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AndrewNeural",
+     "gain_db": -11.1
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -6.6
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -7.5
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.29,
+     "S2",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     1.827,
+     4.687,
+     "S4",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     3.981,
+     6.001,
+     "S3",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     6.496,
+     8.566,
+     "S1",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     9.139,
+     11.289,
+     "S2",
+     "en",
+     "We should stop spending so much on paid ads."
+    ],
+    [
+     12.455,
+     14.955,
+     "S1",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     16.078,
+     18.388,
+     "S4",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     19.045,
+     21.345,
+     "S1",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     21.988,
+     24.518,
+     "S4",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     25.053,
+     27.643,
+     "S3",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     28.032,
+     30.292,
+     "S4",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     31.415,
+     33.675,
+     "S2",
+     "en",
+     "I think the launch date should move by one week."
+    ],
+    [
+     34.481,
+     36.261,
+     "S1",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     36.796,
+     39.276,
+     "S4",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     39.841,
+     42.051,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     42.864,
+     44.884,
+     "S2",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     45.416,
+     48.196,
+     "S3",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     49.161,
+     50.541,
+     "S2",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     50.994,
+     53.684,
+     "S4",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     54.809,
+     56.509,
+     "S3",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     57.28,
+     60.16,
+     "S1",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_25",
+   "kind": "call",
+   "duration": 71.812,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -11.9
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -5.9
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -7.5
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.02,
+     "S3",
+     "en",
+     "Let's look at the budget numbers for next quarter."
+    ],
+    [
+     3.335,
+     5.635,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     5.95,
+     8.09,
+     "S3",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     8.487,
+     10.797,
+     "S1",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     11.27,
+     14.11,
+     "S3",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     15.125,
+     18.765,
+     "S1",
+     "ko",
+     "Hey Jarvis, 지금까지 결정 사항 정리해 줘."
+    ],
+    [
+     28.805,
+     31.085,
+     "S3",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     32.276,
+     35.136,
+     "S1",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     36.025,
+     38.235,
+     "S2",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     37.623,
+     39.843,
+     "S3",
+     "en",
+     "Let's look at the budget numbers for next quarter."
+    ],
+    [
+     39.395,
+     43.035,
+     "S1",
+     "ko",
+     "Hey Jarvis, 지금까지 결정 사항 정리해 줘."
+    ],
+    [
+     53.075,
+     55.055,
+     "S3",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     55.864,
+     58.004,
+     "S1",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     58.511,
+     60.721,
+     "S3",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     61.637,
+     63.707,
+     "S2",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     64.599,
+     66.859,
+     "S1",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     67.173,
+     69.773,
+     "S2",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 15.125,
+     "end": 18.765,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "Hey Jarvis, 지금까지 결정 사항 정리해 줘."
+    },
+    {
+     "start": 39.395,
+     "end": 43.035,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "Hey Jarvis, 지금까지 결정 사항 정리해 줘."
+    }
+   ],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_26",
+   "kind": "call_stop",
+   "duration": 72.832,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -3.9
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -5.5
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -7.4
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.28,
+     "S2",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     2.596,
+     4.076,
+     "S1",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     5.248,
+     7.548,
+     "S3",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     7.14,
+     9.4,
+     "S2",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     10.198,
+     13.078,
+     "S3",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     13.905,
+     16.275,
+     "S2",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     15.623,
+     17.833,
+     "S1",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     18.374,
+     21.254,
+     "S3",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     21.693,
+     24.553,
+     "S2",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     24.935,
+     27.235,
+     "S3",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     27.627,
+     30.427,
+     "S1",
+     "en",
+     "That's a fair point, let's write it down as a decision."
+    ],
+    [
+     31.228,
+     34.138,
+     "S3",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     33.515,
+     36.005,
+     "S1",
+     "en",
+     "Hey Jarvis, how much time do we have left?"
+    ],
+    [
+     39.701,
+     40.301,
+     "S3",
+     "ko",
+     "멈춰."
+    ],
+    [
+     41.801,
+     44.281,
+     "S2",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     45.282,
+     47.422,
+     "S1",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     48.339,
+     50.869,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     50.203,
+     52.783,
+     "S1",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     52.121,
+     55.031,
+     "S3",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     55.656,
+     58.526,
+     "S1",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     59.36,
+     62.05,
+     "S2",
+     "ko",
+     "고객 서비스 팀에 두 명이 더 필요합니다."
+    ],
+    [
+     62.625,
+     64.695,
+     "S3",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     65.337,
+     67.817,
+     "S2",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     68.85,
+     71.1,
+     "S1",
+     "en",
+     "We should stop spending so much on paid ads."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 33.515,
+     "end": 36.005,
+     "lang": "en",
+     "speaker": "S1",
+     "text": "Hey Jarvis, how much time do we have left?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 39.701,
+     "end": 40.301,
+     "lang": "ko",
+     "speaker": "S3",
+     "text": "멈춰."
+    }
+   ],
+   "split": "test"
+  },
+  {
+   "id": "scene_27",
+   "kind": "no_call",
+   "duration": 58.515,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -8.1
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -8.6
+    },
+    {
+     "id": "S3",
+     "lang": "ko",
+     "voice": "ko-KR-HyunsuMultilingualNeural",
+     "gain_db": -2.6
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.93,
+     "S3",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     3.392,
+     5.982,
+     "S1",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     7.131,
+     9.361,
+     "S2",
+     "en",
+     "The Seoul office will join the call at three."
+    ],
+    [
+     10.409,
+     12.549,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     13.454,
+     15.934,
+     "S2",
+     "en",
+     "Hey, did everyone get the calendar invite?"
+    ],
+    [
+     16.462,
+     18.602,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     18.968,
+     21.098,
+     "S3",
+     "ko",
+     "채용 후속 조치는 누가 맡나요?"
+    ],
+    [
+     21.854,
+     23.644,
+     "S2",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     24.576,
+     26.456,
+     "S1",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     25.985,
+     28.355,
+     "S3",
+     "ko",
+     "마케팅 계획은 괜찮아 보입니다."
+    ],
+    [
+     28.695,
+     30.675,
+     "S2",
+     "en",
+     "Let me check the numbers and get back to you."
+    ],
+    [
+     31.844,
+     34.704,
+     "S3",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     34.033,
+     36.173,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     36.89,
+     39.2,
+     "S2",
+     "en",
+     "Let's look at the budget numbers for next quarter."
+    ],
+    [
+     39.934,
+     42.794,
+     "S3",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     43.199,
+     45.129,
+     "S1",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     45.839,
+     47.629,
+     "S2",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     48.357,
+     51.007,
+     "S3",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     51.594,
+     54.094,
+     "S2",
+     "en",
+     "Our customer service team needs two more people."
+    ],
+    [
+     53.305,
+     56.495,
+     "S3",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ]
+   ],
+   "calls": [],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_28",
+   "kind": "call",
+   "duration": 70.097,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "en",
+     "voice": "en-US-AriaNeural",
+     "gain_db": -2.4
+    },
+    {
+     "id": "S2",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -4.4
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-JennyNeural",
+     "gain_db": -9.8
+    },
+    {
+     "id": "S4",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -4.1
+    },
+    {
+     "id": "S5",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -7.3
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     3.4,
+     "S4",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     3.893,
+     6.103,
+     "S3",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     6.923,
+     9.233,
+     "S2",
+     "en",
+     "We should stop spending so much on paid ads."
+    ],
+    [
+     9.945,
+     12.445,
+     "S4",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     13.22,
+     14.7,
+     "S3",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     15.528,
+     18.028,
+     "S4",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     18.884,
+     21.094,
+     "S3",
+     "en",
+     "Jarvis said the report would be ready on Friday."
+    ],
+    [
+     21.998,
+     24.298,
+     "S4",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     23.557,
+     25.037,
+     "S3",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     25.713,
+     28.203,
+     "S2",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     28.671,
+     31.541,
+     "S3",
+     "en",
+     "Honestly, I am not sure the vendor can deliver on time."
+    ],
+    [
+     32.101,
+     34.661,
+     "S2",
+     "en",
+     "Hey Jarvis, summarize the decisions so far."
+    ],
+    [
+     44.701,
+     46.631,
+     "S5",
+     "ko",
+     "디자인 검토가 먼저인 것 같아요."
+    ],
+    [
+     47.787,
+     49.997,
+     "S4",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     49.679,
+     52.269,
+     "S5",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     52.943,
+     55.853,
+     "S4",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     56.662,
+     59.322,
+     "S2",
+     "en",
+     "I agree, but the design review has to come first."
+    ],
+    [
+     59.824,
+     62.324,
+     "S4",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     63.133,
+     65.823,
+     "S5",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     66.639,
+     68.309,
+     "S3",
+     "en",
+     "The marketing plan looks good to me."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 32.101,
+     "end": 34.661,
+     "lang": "en",
+     "speaker": "S2",
+     "text": "Hey Jarvis, summarize the decisions so far."
+    }
+   ],
+   "stops": [],
+   "split": "test"
+  },
+  {
+   "id": "scene_29",
+   "kind": "call_stop",
+   "duration": 59.647,
+   "speakers": [
+    {
+     "id": "S1",
+     "lang": "ko",
+     "voice": "ko-KR-SunHiNeural",
+     "gain_db": -8.4
+    },
+    {
+     "id": "S2",
+     "lang": "ko",
+     "voice": "ko-KR-InJoonNeural",
+     "gain_db": -0.0
+    },
+    {
+     "id": "S3",
+     "lang": "en",
+     "voice": "en-US-EmmaNeural",
+     "gain_db": -6.6
+    }
+   ],
+   "speech": [
+    [
+     0.8,
+     2.82,
+     "S1",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     3.309,
+     5.799,
+     "S3",
+     "en",
+     "Okay, moving on to the next item on the list."
+    ],
+    [
+     6.248,
+     8.268,
+     "S1",
+     "ko",
+     "회의 끝나고 자료 공유해 주세요."
+    ],
+    [
+     9.293,
+     11.733,
+     "S3",
+     "en",
+     "The jars in the lab were labeled incorrectly."
+    ],
+    [
+     12.324,
+     14.504,
+     "S2",
+     "ko",
+     "서울 사무실은 세 시에 합류합니다."
+    ],
+    [
+     15.662,
+     17.872,
+     "S1",
+     "ko",
+     "그 부분은 제가 확인해 보겠습니다."
+    ],
+    [
+     17.531,
+     19.521,
+     "S3",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     20.452,
+     23.052,
+     "S1",
+     "ko",
+     "광고비 지출은 좀 줄여야 할 것 같아요."
+    ],
+    [
+     23.642,
+     26.422,
+     "S2",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ],
+    [
+     27.076,
+     29.536,
+     "S1",
+     "ko",
+     "헤이 자비스, 남은 시간이 얼마야?"
+    ],
+    [
+     32.498,
+     33.228,
+     "S3",
+     "en",
+     "Okay, stop."
+    ],
+    [
+     34.728,
+     37.418,
+     "S2",
+     "ko",
+     "출시 일정은 일주일 미루는 게 좋겠어요."
+    ],
+    [
+     38.081,
+     39.871,
+     "S3",
+     "en",
+     "The marketing plan looks good to me."
+    ],
+    [
+     40.58,
+     42.28,
+     "S2",
+     "ko",
+     "다음 분기 예산을 먼저 보죠."
+    ],
+    [
+     43.362,
+     45.862,
+     "S1",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     46.734,
+     48.454,
+     "S3",
+     "en",
+     "Who owns the follow up on hiring?"
+    ],
+    [
+     48.95,
+     51.54,
+     "S2",
+     "ko",
+     "좋아요, 다음 안건으로 넘어가죠."
+    ],
+    [
+     52.081,
+     54.071,
+     "S3",
+     "en",
+     "Can you share the slides after the meeting?"
+    ],
+    [
+     54.881,
+     57.661,
+     "S2",
+     "ko",
+     "자비스 씨가 보고서를 금요일에 준다고 했어요."
+    ]
+   ],
+   "calls": [
+    {
+     "start": 27.076,
+     "end": 29.536,
+     "lang": "ko",
+     "speaker": "S1",
+     "text": "헤이 자비스, 남은 시간이 얼마야?"
+    }
+   ],
+   "stops": [
+    {
+     "start": 32.498,
+     "end": 33.228,
+     "lang": "en",
+     "speaker": "S3",
+     "text": "Okay, stop."
+    }
+   ],
+   "split": "test"
+  }
+ ]
+}

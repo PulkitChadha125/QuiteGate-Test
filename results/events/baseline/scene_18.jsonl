@@ -1,0 +1,5 @@
+{"t": 8.0, "gate": "baseline", "event": "start", "state_from": "IDLE"}
+{"t": 24.08, "gate": "baseline", "event": "start", "state_from": "IDLE"}
+{"t": 33.68, "gate": "baseline", "event": "start", "state_from": "IDLE"}
+{"t": 43.12, "gate": "baseline", "event": "start", "state_from": "IDLE"}
+{"t": 68.88, "gate": "baseline", "event": "start", "state_from": "IDLE"}

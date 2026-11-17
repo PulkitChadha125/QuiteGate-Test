@@ -1,0 +1,21 @@
+# QuietGate - Python 3.10+ (tested on 3.11.7, Windows 11). Exact versions used for the reported numbers.
+# Install:  pip install -r requirements.txt
+
+# Detectors (reused open-source models, all offline, no API keys)
+openwakeword==0.6.0     # wake word "hey_jarvis" + bundled Silero VAD (ONNX)
+onnxruntime==1.32.0     # runs the openWakeWord / Silero ONNX models
+vosk==0.3.45            # offline speech recognition for "stop" / "그만" / "멈춰" / "자비스"
+
+# Audio and maths
+numpy==2.4.6
+scipy==1.17.1
+soundfile==0.14.0
+sounddevice==0.5.6      # live microphone demo only
+
+# Synthetic test speech (needs internet the first time only)
+edge-tts==7.3.1
+
+# Config, web page, tests
+PyYAML==6.0.3
+gradio==6.32.0
+pytest==9.2.0
